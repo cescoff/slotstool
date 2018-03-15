@@ -45,9 +45,11 @@
     <!-- End of autoscale expressions -->
     
     <!-- Global expressions -->
-    <expression name="PR" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})"/>
-    <expression name="FT" print="true" expression="${PR}"/>
+    <expression name="FS" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})"/>
+    <expression name="PR" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})+${upRight}"/>
+    <expression name="FT" print="true" expression="${FS}"/>
     <expression name="IR" print="true" expression="${PR}/2"/>
+    <expression name="IF" print="true" expression="${PR}/2"/>
 
     <!-- End of global expressions -->
     
@@ -55,7 +57,7 @@
     <expression name="xT" print="true" expression="${borderdistance}+${FT}*(${seatLength}/${PR})"/>
     <expression name="yT" print="true" expression="${borderdistance}"/>
     <expression name="xF" print="true" expression="${borderdistance}"/>
-    <expression name="yF" print="true" expression="${borderdistance}+${PR}*(${seatHeight}/${PR})"/>
+    <expression name="yF" print="true" expression="${borderdistance}+${seatHeight}"/>
     <expression name="xR" print="true" expression="${borderdistance}+${seatLength}"/>
     <expression name="yR" print="true" expression="${yF}"/>
     <expression name="xP" print="true" expression="${borderdistance}"/>
