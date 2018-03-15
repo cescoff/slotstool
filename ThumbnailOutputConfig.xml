@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<output-config>
+    <outputs>
+        <output name="SlotStoolThumbnail" format="SVG">
+            <layer>Main</layer>
+        </output>
+    </outputs>
+</output-config>
