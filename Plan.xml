@@ -30,7 +30,7 @@
 			head-span="Math.max(${chairThickness}/5 + ${woodSpan}/2, 6.0)"
 			radius="Math.max(${woodSpan}/(2*${aspectRatio}), 2.5)"
 			layer="Main"
-	    auto-axle-distance-cut="false"
+	    auto-axle-distance-cut="true"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3"/>
 		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+(${seatWidth}-${fullHandleLength})/2"/>
@@ -50,7 +50,7 @@
 			head-span="Math.max(${chairThickness}/5 + ${woodSpan}/2, 6.0)"
 			radius="Math.max(${woodSpan}/(2*${aspectRatio}), 2.5)"
 			layer="Main"
-	    auto-axle-distance-cut="false"
+	    auto-axle-distance-cut="true"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+(${seatWidth}+${fullHandleLength})/2"/>
 		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+${seatWidth}"/>
