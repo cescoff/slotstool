@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<blue-print>
+    <distance-unit>mm</distance-unit>
+    <point x="${xF}" y="${yF}" name="F" layer="Main"/>
+    <point x="${xR}" y="${yR}" name="R" layer="Main"/>
+    <point x="${xP}" y="${yP}" name="P" layer="Main"/>
+    <point x="${xS}" y="${yS}" name="S" layer="Main"/>
+    <point x="${xT}" y="${yT}" name="T" layer="Main"/>
+    <point x="${xTH}" y="${yTH}" name="TH" layer="Main"/>
+
+	<path name="FT" layer="Main" action="VIEW">
+		<point x="F//Center//0" y="F//Center//0" />
+		<point x="T//Center//0" y="T//Center//0" />
+	</path>
+	
+	<path name="PR" layer="Main" action="VIEW">
+		<point x="P//Center//0" y="P//Center//0" />
+		<point x="R//Center//0" y="R//Center//0" />
+	</path>
+	
+	<path name="PS" layer="Main" action="VIEW">
+		<point x="P//Center//0" y="P//Center//0" />
+		<point x="S//Center//0" y="S//Center//0" />
+	</path>
+</blue-print>
