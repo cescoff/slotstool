@@ -24,7 +24,7 @@
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}"
-			axle-distance2="${seatLength}"
+			axle-distance2="${seatLength}+(3/2)*${woodSpan}"
 			axle-layer="MiddleFace"
 			thickness="${chairThickness}"
 			head-span="Math.max(${chairThickness}/5 + ${woodSpan}/2, 6.0)"
@@ -66,7 +66,7 @@
 		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//0" />
 	</path>
 	
-  <!-- Legs -->
+  	<!-- Legs -->
 	<path name="LegFrame" layer="Main" action="CUT" >
 		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//+${upRight}" />
 		<point x="SeatTopHingeTopLeft//Center//+(4/3)*${IR}" y="SeatTopHingeTopLeft//Center//+${upRight}" />
