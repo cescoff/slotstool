@@ -64,8 +64,8 @@
     <expression name="yS" print="true" expression="${yP}"/>
     <!-- End of dynamic thumbnail expressions -->
     
-    <expression name="CutLeftX" expression="${borderdistance}-${laserCutLength}+${PR}" />
-    <expression name="CutRightX" expression="${borderdistance}+${laserCutLength}" />
+    <expression name="CutLeftX" print="true" expression="${borderdistance}-${laserCutLength}+${PR}" />
+    <expression name="CutRightX" print="true" expression="${borderdistance}+${laserCutLength}" />
     
     <expression name="StoolLength" expression="${FT}+${seatLength}" />
     <expression name="StoolWidth" expression="(2/3)*${upRight}+${seatWidth}" />
