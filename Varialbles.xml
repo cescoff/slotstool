@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<variables>
+    <variable name="borderdistance" value="10.0"/>
+
+    <!-- User defined vars -->
+    <variable name="fullSeatHeight" value="410" print="true"/>
+    <variable name="fullSeatLength" value="330" print="true"/>
+    <variable name="fullSeatWidth" value="320" print="true"/>
+    <variable name="fullUpRight" value="60" print="true"/>
+    <variable name="fullHandleHeight" value="35" print="true"/>
+    <variable name="fullHandleLength" value="100" print="true"/>
+    <variable name="fullLaserCutLength" value="780"/>
+    <variable name="aspectRatio" value="1"/>
+    
+    <variable name="fullHingeToothWidth" value="19" print="true"/>
+    <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
+    <variable name="fullWoodSpan" value="8" print="true"/>
+    <variable name="fullHoleRadius" value="3.9"/>
+    <variable name="fullSliderDepth" value="8"/>
+    
+    <!-- Boolean conditions -->
+    
+    <variable name="enlightAllLayers" type="boolean" value="false" print="true" />
+    
+    <!-- End of user defined vars -->
+    
+    <!-- Autoscale expressions -->
+    <expression name="hingeToothWidth" print="true" expression="Math.max(${fullHingeToothWidth}/${aspectRatio}, 9)"/>
+    <expression name="seatHingeToothHeight" print="true" expression="Math.max(${fullSeatHingeToothHeight}/${aspectRatio}, 20)"/>
+    <expression name="woodSpan" print="true" expression="Math.max(${fullWoodSpan}/${aspectRatio}, 5)"/>
+    <expression name="holeRadius" print="true" expression="Math.max(${fullHoleRadius}/${aspectRatio}, 2.9)"/>
+    <expression name="sliderDepth" expression="Math.max(${fullSliderDepth}/${aspectRatio}, 4)"/>
+
+    <expression name="chairThickness" print="true" expression="3*${woodSpan}"/>
+    
+    <expression name="seatHeight" print="true" expression="${fullSeatHeight}/${aspectRatio}-${chairThickness}/2"/>
+    <expression name="seatLength" print="true" expression="${fullSeatLength}/${aspectRatio}"/>
+    <expression name="seatWidth" print="true" expression="${fullSeatWidth}/${aspectRatio}"/>
+    <expression name="upRight" print="true" expression="${fullUpRight}/${aspectRatio}"/>
+    <expression name="handleHeight" print="true" expression="${fullHandleHeight}/${aspectRatio}"/>
+    <expression name="handleLength" print="true" expression="${fullHandleLength}/${aspectRatio}"/>
+    <expression name="lateralLockLength" expression="${fullLateralLockLength}/${aspectRatio}"/>
+
+    <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}/${aspectRatio}"/>
+
+    <!-- End of autoscale expressions -->
+    
+    <!-- Global expressions -->
+    <expression name="PR" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})"/>
+    <expression name="FT" print="true" expression="${PR}"/>
+    <expression name="IR" print="true" expression="${PR}/2"/>
+    <expression name="TopUpRight" print="true" expression="(4/3)*${upRight}"/>
+
+    <expression name="upRightHingeDistance1" expression="${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}"/>
+    <expression name="upRightHingeDistance2" expression="${seatLength}+${woodSpan}+${holeRadius}-${lateralLockLength}-(${chairThickness}*${PR})/${seatHeight}"/>
+    
+    <!-- End of global expressions -->
+    
+    <!-- Dynamic thumbnail expressions -->
+    <expression name="FTWithUpRight" print="true" expression="${FT}"/>
+    <expression name="xT" print="true" expression="${borderdistance}+${FTWithUpRight}*(${seatLength}/${PR})"/>
+    <expression name="yT" print="true" expression="${borderdistance}"/>
+    <expression name="xTH" print="true" expression="${borderdistance}+${upRightHingeDistance1}*(${seatLength}/${PR})"/>
+    <expression name="yTH" print="true" expression="${borderdistance}"/>
+    <expression name="xF" print="true" expression="${borderdistance}"/>
+    <expression name="yF" print="true" expression="${borderdistance}+${upRightHingeDistance1}*(${seatHeight}/${PR})"/>
+    <expression name="xR" print="true" expression="${borderdistance}+${seatLength}"/>
+    <expression name="yR" print="true" expression="${yF}"/>
+    <expression name="xP" print="true" expression="${borderdistance}"/>
+    <expression name="yP" print="true" expression="${yF} - ${seatHeight}"/>
+    <expression name="xS" print="true" expression="${xP} + ${seatLength}"/>
+    <expression name="yS" print="true" expression="${yP}"/>
+    <!-- End of dynamic thumbnail expressions -->
+    
+    <expression name="StoolLength" expression="${FTWithUpRight}" />
+    <expression name="StoolWidth" expression="2*${upRight}+${seatLength}" />
+    
+    <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 1.6)*(${aspectRatio} - 2)" validation="==0" />
+
+</variables>
