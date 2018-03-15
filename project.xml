@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <name>Slot Stool</name>
+    <thumbnail-url>https://github.com/cescoff/slotstool/raw/master/slot_stool_thumbnail.PNG</thumbnail-url>
+    <previews>
+        <url>https://github.com/cescoff/slotstool/raw/master/slot_stool_preview.jpg</url>
+    </previews>
+    <description>Customizable flat folding stool made out of wood</description>
+    <presentation>&lt;p&gt;The folding stool prototype.&lt;/p&gt;&lt;p&gt;This project proves the concept of the wood based hinge (Twice). The hinge is calculated dynamically depending on the desired parameters.&lt;/p&gt;&lt;p&gt;The hinge and sliders are distributed through 3 different layers. The one in the middle embeds the axles holes.&lt;/p&gt;&lt;p&gt;The mounting instructions are provided within the zip archive that can be downloaded&lt;/p&gt;&lt;p&gt;Sources are available here: https://github.com/cescoff/rattrapstool&lt;/p&gt;&lt;p&gt;Enjoy it, it is free&lt;/p&gt;</presentation>
+    <variables-url>https://raw.githubusercontent.com/cescoff/slotstool/master/Variables.xml</variables-url>
+    <template-url>https://raw.githubusercontent.com/cescoff/slotstool/master/Plan.xml</template-url>
+    <output-config-url>https://raw.githubusercontent.com/cescoff/slotstool/master/PlanOutputConfig.xml</output-config-url>
+    <dynamic-preview-url>https://raw.githubusercontent.com/cescoff/slotstool/master/Thumbnail.xml</dynamic-preview-url>
+    <dynamic-preview-output-url>https://raw.githubusercontent.com/cescoff/slotstool/master/ThumbnailOutputConfig.xml</dynamic-preview-output-url>
+    <documentation-url>https://raw.githubusercontent.com/cescoff/slotstool/master/Documentation.html</documentation-url>
+    <default>
+        <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">410</variable>
+        <variable name="fullSeatLength" display-name="Seat Length" unit="mm" description="In millimeters">330</variable>
+        <variable name="fullSeatWidth" display-name="Seat Width" unit="mm" description="In millimeters">330</variable>
+        <variable name="fullUpRight" display-name="Upright" unit="mm" description="In millimeters">60</variable>
+        <variable name="fullHandleHeight" display-name="Handle Height" unit="mm" description="In millimeters">35</variable>
+        <variable name="fullHandleLength" display-name="Handle Length" unit="mm" description="In millimeters">100</variable>
+        <variable name="fullLaserCutLength" display-name="Laser cut length" unit="mm" description="In millimeters">765</variable>
+        <variable name="aspectRatio" display-name="Aspect ratio" unit="" description="1 = 100%, 1.6 = 62%, 2 = 50%">1</variable>
+        <variable name="enlightAllLayers" type="boolean" display-name="Enlight legs" unit="" description="Check to have none full legs">false</variable>
+    </default>
+    <printable>
+        <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">410</variable>
+        <variable name="fullSeatLength" display-name="Seat Length" unit="mm" description="In millimeters">330</variable>
+        <variable name="fullSeatWidth" display-name="Seat Width" unit="mm" description="In millimeters">330</variable>
+        <variable name="fullUpRight" display-name="Upright" unit="mm" description="In millimeters">50</variable>
+        <variable name="fullHandleHeight" display-name="Handle Height" unit="mm" description="In millimeters">35</variable>
+        <variable name="fullHandleLength" display-name="Handle Length" unit="mm" description="In millimeters">100</variable>
+        <variable name="fullLaserCutLength" display-name="Laser cut length" unit="mm" description="In millimeters">765</variable>
+        <variable name="aspectRatio" display-name="Aspect ratio" unit="" description="1 = 100%, 1.6 = 62%, 2 = 50%">1</variable>
+        <variable name="enlightAllLayers" type="boolean" display-name="Enlight legs" unit="" description="Check to have none full legs">false</variable>
+    </printable>
+</project>
