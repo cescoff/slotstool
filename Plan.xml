@@ -10,7 +10,7 @@
 	<point x="${borderdistance}" y="${borderdistance}" name="GlobalTopLeftPoint" layer="Main" />
 
 	<!-- Cut points -->
-	<point x="${borderdistance}-${laserCutLength}" y="${borderdistance}" name="CutLeftTop" layer="Main" />
+	<point x="${borderdistance}-${laserCutLength}+${FT}" y="${borderdistance}" name="CutLeftTop" layer="Main" />
 	<point x="${borderdistance}-${laserCutLength}+${FT}" y="${borderdistance}+2*${upRight}+${seatWidth}" name="CutLeftBottom" layer="Main" />
 	<point x="${borderdistance}+${laserCutLength}" y="${borderdistance}" name="CutRightTop" layer="Main" />
 	<point x="${borderdistance}+${laserCutLength}" y="${borderdistance}+2*${upRight}+${seatWidth}" name="CutRightBottom" layer="Main" />
