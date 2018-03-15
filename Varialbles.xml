@@ -49,21 +49,14 @@
     <expression name="PR" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})"/>
     <expression name="FT" print="true" expression="${PR}"/>
     <expression name="IR" print="true" expression="${PR}/2"/>
-    <expression name="TopUpRight" print="true" expression="(4/3)*${upRight}"/>
 
-    <expression name="upRightHingeDistance1" expression="${PR}+${lateralLockLength}+(${chairThickness}*${PR})/${seatHeight}"/>
-    <expression name="upRightHingeDistance2" expression="${seatLength}+${woodSpan}+${holeRadius}-${lateralLockLength}-(${chairThickness}*${PR})/${seatHeight}"/>
-    
     <!-- End of global expressions -->
     
     <!-- Dynamic thumbnail expressions -->
-    <expression name="FTWithUpRight" print="true" expression="${FT}"/>
-    <expression name="xT" print="true" expression="${borderdistance}+${FTWithUpRight}*(${seatLength}/${PR})"/>
+    <expression name="xT" print="true" expression="${borderdistance}+${FT}*(${seatLength}/${PR})"/>
     <expression name="yT" print="true" expression="${borderdistance}"/>
-    <expression name="xTH" print="true" expression="${borderdistance}+${upRightHingeDistance1}*(${seatLength}/${PR})"/>
-    <expression name="yTH" print="true" expression="${borderdistance}"/>
     <expression name="xF" print="true" expression="${borderdistance}"/>
-    <expression name="yF" print="true" expression="${borderdistance}+${upRightHingeDistance1}*(${seatHeight}/${PR})"/>
+    <expression name="yF" print="true" expression="${borderdistance}+${PR}*(${seatHeight}/${PR})"/>
     <expression name="xR" print="true" expression="${borderdistance}+${seatLength}"/>
     <expression name="yR" print="true" expression="${yF}"/>
     <expression name="xP" print="true" expression="${borderdistance}"/>
@@ -72,8 +65,8 @@
     <expression name="yS" print="true" expression="${yP}"/>
     <!-- End of dynamic thumbnail expressions -->
     
-    <expression name="StoolLength" expression="${FTWithUpRight}" />
-    <expression name="StoolWidth" expression="2*${upRight}+${seatLength}" />
+    <expression name="StoolLength" expression="${FT}+${seatLength}" />
+    <expression name="StoolWidth" expression="(2/3)*${upRight}+${seatWidth}" />
     
     <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 1.6)*(${aspectRatio} - 2)" validation="==0" />
 
