@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<blue-print>
+    <distance-unit>mm</distance-unit>
+	
+	<!-- ################################### -->
+	<!-- ###         MAIN LAYER         #### -->
+	<!-- ################################### -->
+	
+	<!-- Default point -->
+	<point x="${borderdistance}" y="${borderdistance}" name="GlobalTopLeftPoint" layer="Main" />
+
+	<!-- Cut points -->
+	<point x="${borderdistance}+${FTWithUpRight}-${laserCutLength}" y="${borderdistance}" name="CutLeftTop" layer="Main" />
+	<point x="${borderdistance}+${FTWithUpRight}-${laserCutLength}" y="${borderdistance}+2*${upRight}+${seatWidth}" name="CutLeftBottom" layer="Main" />
+	<point x="${borderdistance}+${laserCutLength}" y="${borderdistance}" name="CutRightTop" layer="Main" />
+	<point x="${borderdistance}+${laserCutLength}" y="${borderdistance}+2*${upRight}+${seatWidth}" name="CutRightBottom" layer="Main" />
+
+	<!-- Seat hinge crenel -->
+	<hinge 
+			name="SeatTopHinge" 
+			min-width="${hingeToothWidth}" 
+			head-height="${seatHingeToothHeight}" 
+			border-offset="${woodSpan}" 
+			direction="backward" 
+			action="CUT" 
+			axle-distance1="${PR}"
+			axle-distance2="${seatLength}"
+			axle-layer="MiddleFace"
+			thickness="${chairThickness}"
+			head-span="Math.max(${chairThickness}/5 + ${woodSpan}/2, 6.0)"
+			radius="Math.max(${woodSpan}/(2*${aspectRatio}), 2.5)"
+			layer="Main"
+	    auto-axle-distance-cut="false"
+			sharp-angle-layer="BottomFace">
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3"/>
+		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+(${seatWidth}-${fullHandleLength})/2"/>
+	</hinge>
+
+	<hinge 
+			name="SeatBottomHinge" 
+			min-width="${hingeToothWidth}" 
+			head-height="${seatHingeToothHeight}" 
+			border-offset="${woodSpan}" 
+			direction="backward" 
+			action="CUT" 
+			axle-distance1="${PR}"
+			axle-distance2="${seatLength}+(3/2)*${woodSpan}"
+			axle-layer="MiddleFace"
+			thickness="${chairThickness}"
+			head-span="Math.max(${chairThickness}/5 + ${woodSpan}/2, 6.0)"
+			radius="Math.max(${woodSpan}/(2*${aspectRatio}), 2.5)"
+			layer="Main"
+	    auto-axle-distance-cut="false"
+			sharp-angle-layer="BottomFace">
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+(${seatWidth}+${fullHandleLength})/2"/>
+		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+${seatWidth}"/>
+	</hinge>
+
+
+	<!-- BODY FRAME -->
+	<path name="BodyFrame" layer="Main" action="CUT" >
+		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//0" />
+		<point x="SeatTopHingeTopRight//Center//0" y="SeatTopHingeTopRight//Center//0" />
+		<point x="SeatBottomHingeBottomRight//Center//0" y="SeatBottomHingeBottomRight//Center//0" />
+		<point x="SeatBottomHingeBottomLeft//Center//0" y="SeatBottomHingeBottomLeft//Center//0" />
+		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//0" />
+	</path>
+	
+  <!-- Legs -->
+	<path name="LegFrame" layer="Main" action="CUT" >
+		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//+${upRight}" />
+		<point x="SeatTopHingeTopLeft//Center//+(4/3)*${IR}" y="SeatTopHingeTopLeft//Center//+${upRight}" />
+		<point x="SeatTopHingeBottomMiddle//Center//-${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
+		<point x="SeatTopHingeBottomRight//Center//0" y="SeatTopHingeBottomRight//Center//0" />
+		<point x="SeatBottomHingeTopRight//Center//0" y="SeatBottomHingeTopRight//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//-${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
+		<point x="SeatBottomHingeBottomLeft//Center//+(4/3)*${IR}" y="SeatBottomHingeBottomLeft//Center//-${upRight}" />
+		<point x="SeatBottomHingeBottomLeft//Center//0" y="SeatBottomHingeBottomLeft//Center//-${upRight}" />
+	</path>
+  
+  
+	<!-- HANDLE -->
+	<circle center-x="SeatTopHingeBottomAxleCut//Center//-(4/3)*${upRight}" center-y="SeatTopHingeBottomAxleCut//Center//+${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Cover"/>
+	<circle center-x="SeatBottomHingeTopAxleCut//Center//-(4/3)*${upRight}" center-y="SeatBottomHingeTopAxleCut//Center//-${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Cover"/>
+	<path name="HandCarryTopLeft" layer="Cover" action="CUT" >
+		<point x="HandCarryTopCircle//RadiusLeft//0" y="HandCarryTopCircle//RadiusLeft//0" />
+		<point x="HandCarryBottomCircle//RadiusLeft//0" y="HandCarryBottomCircle//RadiusLeft//0" />
+	</path>
+	<path name="HandCarryTopRight" layer="Cover" action="CUT" >
+		<point x="HandCarryTopCircle//RadiusRight//0" y="HandCarryTopCircle//RadiusRight//0" />
+		<point x="HandCarryBottomCircle//RadiusRight//0" y="HandCarryBottomCircle//RadiusRight//0" />
+	</path>
+	
+</blue-print>
