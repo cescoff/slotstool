@@ -10,10 +10,10 @@
 	<point x="${borderdistance}" y="${borderdistance}" name="GlobalTopLeftPoint" layer="Main" />
 
 	<!-- Cut points -->
-	<point x="${borderdistance}-${laserCutLength}+${PR}" y="${borderdistance}" name="CutLeftTop" layer="Main" />
-	<point x="${borderdistance}-${laserCutLength}+${PR}" y="${borderdistance}+2*${upRight}+${seatWidth}" name="CutLeftBottom" layer="Main" />
-	<point x="${borderdistance}+${laserCutLength}" y="${borderdistance}" name="CutRightTop" layer="Main" />
-	<point x="${borderdistance}+${laserCutLength}" y="${borderdistance}+2*${upRight}+${seatWidth}" name="CutRightBottom" layer="Main" />
+	<point x="${CutLeftX}" y="${borderdistance}" name="CutLeftTop" layer="Main" />
+	<point x="${CutLeftX}" y="${borderdistance}+2*${upRight}+${seatWidth}" name="CutLeftBottom" layer="Main" />
+	<point x="${CutRightX}" y="${borderdistance}" name="CutRightTop" layer="Main" />
+	<point x="${CutRightX}" y="${borderdistance}+2*${upRight}+${seatWidth}" name="CutRightBottom" layer="Main" />
 
 	<!-- Seat hinge crenel -->
 	<hinge 
