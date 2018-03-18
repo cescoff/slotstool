@@ -68,6 +68,8 @@
     <expression name="yP" print="true" expression="${yF} - ${seatHeight}"/>
     <expression name="xS" print="true" expression="${xP} + ${seatLength}"/>
     <expression name="yS" print="true" expression="${yP}"/>
+    <expression name="xI" print="true" expression="(${xR}-${xP})*((${PR}-${IR})/${PR})"/>
+    <expression name="yI" print="true" expression="(${yR}-${yP})*((${PR}-${IR})/${PR})"/>
     <!-- End of dynamic thumbnail expressions -->
     
     <expression name="CutLeftX" print="true" expression="${borderdistance}-${laserCutLength}+${PR}+${seatLength}" />
