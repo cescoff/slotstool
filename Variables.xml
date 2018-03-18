@@ -11,6 +11,7 @@
     <variable name="fullHandleLength" value="100" print="true"/>
     <variable name="fullLaserCutLength" value="780"/>
     <variable name="aspectRatio" value="1"/>
+    <variable name="delta" value="0.65"/>
     
     <variable name="fullHingeToothWidth" value="19" print="true"/>
     <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
@@ -48,10 +49,11 @@
     
     <!-- Global expressions -->
     <expression name="FS" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})"/>
-    <expression name="PR" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})+${upRight}"/>
+    <expression name="PR" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + U*${seatLength})+${upRight}"/>
     <expression name="FT" print="true" expression="${FS}"/>
-    <expression name="IR" print="true" expression="${PR}/2"/>
-    <expression name="IF" print="true" expression="${PR}/2"/>
+    <expression name="FR" print="true" expression="${seatLength}/((1/${delta}) - 1)"/>    
+    <expression name="IF" print="true" expression="${PR}*${delta}"/>
+    <expression name="IR" print="true" expression="((${FR} - ${delta}*${seatLength})*${PR})/${FR}"/>
 
     <!-- End of global expressions -->
     
@@ -60,7 +62,7 @@
     <expression name="yT" print="true" expression="${borderdistance}"/>
     <expression name="xF" print="true" expression="${borderdistance}"/>
     <expression name="yF" print="true" expression="${borderdistance}+${seatHeight}"/>
-    <expression name="xR" print="true" expression="${borderdistance}+${seatLength}"/>
+    <expression name="xR" print="true" expression="${borderdistance}+${FR}"/>
     <expression name="yR" print="true" expression="${yF}"/>
     <expression name="xP" print="true" expression="${borderdistance}"/>
     <expression name="yP" print="true" expression="${yF} - ${seatHeight}"/>
