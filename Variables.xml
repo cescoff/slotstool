@@ -11,7 +11,7 @@
     <variable name="fullHandleLength" value="100" print="true"/>
     <variable name="fullLaserCutLength" value="780"/>
     <variable name="aspectRatio" value="1"/>
-    <variable name="delta" value="0.65"/>
+    <variable name="delta" value="0.55"/>
     
     <variable name="fullHingeToothWidth" value="19" print="true"/>
     <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
