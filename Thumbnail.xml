@@ -21,4 +21,6 @@
 		<point x="P//Center//0" y="P//Center//0" />
 		<point x="S//Center//0" y="S//Center//0" />
 	</path>
+	<circle center-x="${xI}" center-y="${yI}" radius="5" action="CUT" name="I" layer="Main"/>
+
 </blue-print>
