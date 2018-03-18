@@ -49,7 +49,7 @@
     
     <!-- Global expressions -->
     <expression name="FS" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + ${seatLength}*${seatLength})"/>
-    <expression name="PR" print="true" expression="Math.sqrt(${seatHeight}*${seatHeight} + U*${seatLength})+${upRight}"/>
+    <expression name="PR" print="true" expression="${FS}+${upRight}"/>
     <expression name="FT" print="true" expression="${FS}"/>
     <expression name="FR" print="true" expression="${seatLength}/((1/${delta}) - 1)"/>    
     <expression name="IF" print="true" expression="${PR}*${delta}"/>
@@ -58,7 +58,7 @@
     <!-- End of global expressions -->
     
     <!-- Dynamic thumbnail expressions -->
-    <expression name="xT" print="true" expression="${borderdistance}+${FT}*(${seatLength}/${PR})"/>
+    <expression name="xT" print="true" expression="${borderdistance}+${seatLength}"/>
     <expression name="yT" print="true" expression="${borderdistance}"/>
     <expression name="xF" print="true" expression="${borderdistance}"/>
     <expression name="yF" print="true" expression="${borderdistance}+${seatHeight}"/>
