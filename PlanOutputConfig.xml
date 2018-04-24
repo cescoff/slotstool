@@ -30,6 +30,7 @@
             <layer>Holes</layer>
             <layer>BottomFace</layer>
             <layer>FullLeg</layer>
+            <layer>BottomFace</layer>
 <!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
     </outputs>
