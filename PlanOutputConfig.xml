@@ -5,32 +5,32 @@
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>Cover</layer>
-			<splitter point1="CutRightTop" point2="CutRightBottom" />
+<!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
         <output name="B" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>Cover</layer>
-			<splitter point1="CutRightTop" point2="CutRightBottom" />
+<!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
         <output name="C" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>MiddleFace</layer>
-			<splitter point1="CutRightTop" point2="CutRightBottom" />
+<!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
         <output name="D" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>MiddleFace</layer>
             <layer>TopFaceB</layer>
-			<splitter point1="CutLeftTop" point2="CutLeftBottom" />
+<!--			<splitter point1="CutLeftTop" point2="CutLeftBottom" />-->
         </output>
         <output name="E" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>BottomFace</layer>
-			<splitter point1="CutRightTop" point2="CutRightBottom" />
+<!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
     </outputs>
 </output-config>
