@@ -32,8 +32,8 @@
 			layer="Main"
 	                auto-axle-distance-cut="false"
 			sharp-angle-layer="BottomFace">
-		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3"/>
-		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+(${seatWidth}-${fullHandleLength})/2"/>
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//0"/>
+		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//(${seatMountWidth}-${fullHandleLength})/2"/>
 	</hinge>
 
 	<hinge 
@@ -52,22 +52,22 @@
 			layer="Main"
 		        auto-axle-distance-cut="false"
 			sharp-angle-layer="BottomFace">
-		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+(${seatWidth}+${fullHandleLength})/2"/>
-		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+${seatWidth}"/>
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//(${seatMountWidth}+${fullHandleLength})/2"/>
+		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//${seatMountWidth}"/>
 	</hinge>
 
 
 	<!-- BODY FRAME -->
 	<path name="BodyFrame" layer="Main" action="CUT" >
 		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//0" />
-		<point x="SeatTopHingeTopRight//Center//0" y="SeatTopHingeTopRight//Center//0" />
-		<point x="SeatBottomHingeBottomRight//Center//0" y="SeatBottomHingeBottomRight//Center//0" />
+		<point x="SeatTopHingeTopRight//Center//${upRight}/2" y="SeatTopHingeTopRight//Center//0" />
+		<point x="SeatBottomHingeBottomRight//Center//${upRight}/2" y="SeatBottomHingeBottomRight//Center//0" />
 		<point x="SeatBottomHingeBottomLeft//Center//0" y="SeatBottomHingeBottomLeft//Center//0" />
 		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//0" />
 	</path>
 	
   	<!-- Legs -->
-	<path name="LegFrame" layer="Main" action="CUT" >
+<!--	<path name="LegFrame" layer="Main" action="CUT" >
 		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//+${upRight}" />
 		<point x="SeatTopHingeTopLeft//Center//+(4/3)*${IR}" y="SeatTopHingeTopLeft//Center//+${upRight}" />
 		<point x="SeatTopHingeBottomMiddle//Center//-${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
@@ -76,7 +76,7 @@
 		<point x="SeatBottomHingeTopMiddle//Center//-${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
 		<point x="SeatBottomHingeBottomLeft//Center//+(4/3)*${IR}" y="SeatBottomHingeBottomLeft//Center//-${upRight}" />
 		<point x="SeatBottomHingeBottomLeft//Center//0" y="SeatBottomHingeBottomLeft//Center//-${upRight}" />
-	</path>
+	</path>-->
   
   
 	<!-- HANDLE -->
