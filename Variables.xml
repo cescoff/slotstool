@@ -9,7 +9,7 @@
     <variable name="fullUpRight" value="50" print="true"/>
     <variable name="fullHandleHeight" value="35" print="true"/>
     <variable name="fullHandleLength" value="100" print="true"/>
-    <variable name="fullLaserCutLength" value="780"/>
+    <variable name="fullLaserCutLength" value="800"/>
     <variable name="fullRoundCornersRadius" value="20"/>
     <variable name="aspectRatio" value="1"/>
     <variable name="delta" value="0.5"/>
