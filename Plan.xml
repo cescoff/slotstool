@@ -24,13 +24,13 @@
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}"
-			axle-distance2="${seatLength}+(3/2)*${woodSpan}"
+			axle-distance2="${seatMountLength}+${sliderExtraSpan}"
 			axle-layer="MiddleFace"
 			thickness="${chairThickness}"
 			head-span="Math.max(${chairThickness}/5 + ${woodSpan}/2, 6.0)"
-			radius="Math.max(${woodSpan}/(2*${aspectRatio}), 2.5)"
+			radius="${axleRadius}"
 			layer="Main"
-	    auto-axle-distance-cut="true"
+	                auto-axle-distance-cut="false"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3"/>
 		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+(${seatWidth}-${fullHandleLength})/2"/>
@@ -44,13 +44,13 @@
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}"
-			axle-distance2="${seatLength}+(3/2)*${woodSpan}"
+			axle-distance2="${seatMountLength}+${sliderExtraSpan}"
 			axle-layer="MiddleFace"
 			thickness="${chairThickness}"
 			head-span="Math.max(${chairThickness}/5 + ${woodSpan}/2, 6.0)"
-			radius="Math.max(${woodSpan}/(2*${aspectRatio}), 2.5)"
+			radius="${axleRadius}"
 			layer="Main"
-	    auto-axle-distance-cut="true"
+		        auto-axle-distance-cut="false"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+(${seatWidth}+${fullHandleLength})/2"/>
 		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//+${upRight}/3+${seatWidth}"/>
