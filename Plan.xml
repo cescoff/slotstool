@@ -60,7 +60,7 @@
 	<!-- BODY FRAME -->
 	<path name="BodyFrame" layer="Main" action="CUT" >
 		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//0" />
-		<point x="SeatTopHingeTopRight//Center//${upRight}/2++${sliderExtraSpan}" y="SeatTopHingeTopRight//Center//0" />
+		<point x="SeatTopHingeTopRight//Center//${upRight}/2+${sliderExtraSpan}" y="SeatTopHingeTopRight//Center//0" />
 		<point x="SeatBottomHingeBottomRight//Center//${upRight}/2+${sliderExtraSpan}" y="SeatBottomHingeBottomRight//Center//0" />
 		<point x="SeatBottomHingeBottomLeft//Center//0" y="SeatBottomHingeBottomLeft//Center//0" />
 		<point x="SeatTopHingeTopLeft//Center//0" y="SeatTopHingeTopLeft//Center//0" />
