@@ -16,7 +16,7 @@
     <variable name="fullAxleRadius" value="4"/>
     
     <variable name="fullHingeToothWidth" value="12" print="true"/>
-    <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
+    <variable name="fullSeatHingeToothHeight" value="33" print="true"/>
     <variable name="fullWoodSpan" value="8" print="true"/>
     <variable name="fullThinWoodSpan" value="5" print="true"/>
     <variable name="fullHoleRadius" value="3.9"/>
@@ -78,7 +78,7 @@
     <expression name="yI" print="true" expression="(${yR}-${yP})/2"/>
     <!-- End of dynamic thumbnail expressions -->
     
-    <expression name="sliderExtraSpan" print="true" expression="(3/2)*${axleRadius}"/>
+    <expression name="sliderExtraSpan" print="true" expression="3*${axleRadius}"/>
     
     <expression name="CutLeftX" print="true" expression="${borderdistance}-${laserCutLength}+${PR}+${seatLength}" />
     <expression name="CutRightX" print="true" expression="${borderdistance}+${laserCutLength}" />
