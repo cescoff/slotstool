@@ -111,17 +111,17 @@
   
 	<!-- Sliders -->
 	<path name="SliderTop" layer="MiddleFace" action="CUT" >
-		<point x="SeatTopHingeBottomAxleCut//Center//+${upRight}/2" y="SeatTopHingeBottomAxleCut//Center//0" />
-		<point x="SeatTopHingeBottomAxleCut//Center//+${upRight}/2" y="SeatTopHingeBottomAxleCut//Center//-${sliderDepth}" />
-		<point x="SeatTopHingeBottomAxleCut//Center//+${seatMountLength}+${axleRadius}" y="SeatTopHingeBottomAxleCut//Center//-${sliderDepth}" />
-		<point x="SeatTopHingeBottomAxleCut//Center//+${seatMountLength}+${axleRadius}" y="SeatTopHingeBottomAxleCut//Center//0" />
+		<point x="SeatTopHingeBottomMiddle//Center//+${upRight}/2" y="SeatTopHingeBottomMiddle//Center//0" />
+		<point x="SeatTopHingeBottomMiddle//Center//+${upRight}/2" y="SeatTopHingeBottomMiddle//Center//-${sliderDepth}" />
+		<point x="SeatTopHingeBottomMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatTopHingeBottomMiddle//Center//-${sliderDepth}" />
+		<point x="SeatTopHingeBottomMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatTopHingeBottomMiddle//Center//0" />
 	</path>
 	
 	<path name="SliderBottom" layer="MiddleFace" action="CUT" >
-		<point x="SeatBottomHingeTopAxleCut//Center//+${upRight}/2" y="SeatBottomHingeTopAxleCut//Center//0" />
-		<point x="SeatBottomHingeTopAxleCut//Center//+${upRight}/2" y="SeatBottomHingeTopAxleCut//Center//${sliderDepth}" />
-		<point x="SeatBottomHingeTopAxleCut//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopAxleCut//Center//${sliderDepth}" />
-		<point x="SeatBottomHingeTopAxleCut//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopAxleCut//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//+${upRight}/2" y="SeatBottomHingeTopMiddle//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//+${upRight}/2" y="SeatBottomHingeTopMiddle//Center//${sliderDepth}" />
+		<point x="SeatBottomHingeTopMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopMiddle//Center//${sliderDepth}" />
+		<point x="SeatBottomHingeTopMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
 	
 	
