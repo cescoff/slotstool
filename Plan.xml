@@ -24,7 +24,7 @@
 			direction="backward" 
 			action="CUT" 
 			axle-distance1="${PR}"
-			axle-distance2="${seatMountLength}+${sliderExtraSpan}"
+			axle-distance2="${seatMountLength}"
 			axle-layer="MiddleFace"
 			thickness="${chairThickness}"
 			head-span="Math.max(${chairThickness}/5 + ${woodSpan}/2, 6.0)"
