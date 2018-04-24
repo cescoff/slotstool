@@ -10,6 +10,7 @@
     <variable name="fullHandleHeight" value="35" print="true"/>
     <variable name="fullHandleLength" value="100" print="true"/>
     <variable name="fullLaserCutLength" value="780"/>
+    <variable name="fullRoundCornersRadius" value="20"/>
     <variable name="aspectRatio" value="1"/>
     <variable name="delta" value="0.5"/>
     <variable name="fullAxleRadius" value="4"/>
@@ -35,6 +36,7 @@
     <expression name="holeRadius" print="true" expression="Math.max(${fullHoleRadius}/${aspectRatio}, 2.9)"/>
     <expression name="sliderDepth" expression="Math.max(${fullSliderDepth}/${aspectRatio}, 4)"/>
     <expression name="axleRadius" expression="Math.max(${fullAxleRadius}/${aspectRatio}, 2.5)"/>
+    <expression name="roundCornersRadius" expression="${fullRoundCornersRadius}/${aspectRatio}"/>
     
     <expression name="chairThickness" print="true" expression="3*${woodSpan}"/>
     
