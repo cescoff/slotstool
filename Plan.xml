@@ -71,9 +71,9 @@
 		<point2 x="SeatTopHingeTopLeft//Center//${roundCornersRadius}" y="SeatTopHingeTopLeft//Center//0" />
 	</arc>
 	<arc name="RoundCornerTopRight" layer="Main" radius="${roundCornersRadius}" action="CUT">
-		<center x="SeatTopHingeTopRight//Center//-${roundCornersRadius}" y="SeatTopHingeTopRight//Center//${roundCornersRadius}" />
-		<point1 x="SeatTopHingeTopRight//Center//-${roundCornersRadius}" y="SeatTopHingeTopRight//Center//0" />
-		<point2 x="SeatTopHingeTopRight//Center//0" y="SeatTopHingeTopRight//Center//${roundCornersRadius}" />
+		<center x="SeatTopHingeTopRight//Center//-${roundCornersRadius}+${upRight}/2" y="SeatTopHingeTopRight//Center//${roundCornersRadius}" />
+		<point1 x="SeatTopHingeTopRight//Center//-${roundCornersRadius}+${upRight}/2" y="SeatTopHingeTopRight//Center//0" />
+		<point2 x="SeatTopHingeTopRight//Center//+${upRight}/2" y="SeatTopHingeTopRight//Center//${roundCornersRadius}" />
 	</arc>
 	<arc name="RoundCornerBottomLeft" layer="Main" radius="${roundCornersRadius}" action="CUT">
 		<center x="SeatBottomHingeBottomLeft//Center//${roundCornersRadius}" y="SeatBottomHingeBottomLeft//Center//-${roundCornersRadius}" />
@@ -81,9 +81,9 @@
 		<point2 x="SeatBottomHingeBottomLeft//Center//0" y="SeatBottomHingeBottomLeft//Center//-${roundCornersRadius}" />
 	</arc>
 	<arc name="RoundCornerBottomRight" layer="Main" radius="${roundCornersRadius}" action="CUT">
-		<center x="SeatBottomHingeBottomRight//Center//-${roundCornersRadius}" y="SeatBottomHingeBottomRight//Center//-${roundCornersRadius}" />
-		<point1 x="SeatBottomHingeBottomRight//Center//0" y="SeatBottomHingeBottomRight//Center//-${roundCornersRadius}" />
-		<point2 x="SeatBottomHingeBottomRight//Center//-${roundCornersRadius}" y="SeatBottomHingeBottomRight//Center//0" />
+		<center x="SeatBottomHingeBottomRight//Center//-${roundCornersRadius}+${upRight}/2" y="SeatBottomHingeBottomRight//Center//-${roundCornersRadius}" />
+		<point1 x="SeatBottomHingeBottomRight//Center//+${upRight}/2" y="SeatBottomHingeBottomRight//Center//-${roundCornersRadius}" />
+		<point2 x="SeatBottomHingeBottomRight//Center//-${roundCornersRadius}+${upRight}/2" y="SeatBottomHingeBottomRight//Center//0" />
 	</arc>
 	
   	<!-- Legs -->
