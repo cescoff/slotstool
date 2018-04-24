@@ -111,15 +111,15 @@
   
 	<!-- Sliders -->
 	<path name="SliderTop" layer="MiddleFace" action="CUT" >
-		<point x="SeatTopHingeBottomMiddle//Center//+${upRight}/2" y="SeatTopHingeBottomMiddle//Center//0" />
-		<point x="SeatTopHingeBottomMiddle//Center//+${upRight}/2" y="SeatTopHingeBottomMiddle//Center//-${sliderDepth}" />
+		<point x="SeatTopHingeBottomMiddle//Center//+${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
+		<point x="SeatTopHingeBottomMiddle//Center//+${upRight}" y="SeatTopHingeBottomMiddle//Center//-${sliderDepth}" />
 		<point x="SeatTopHingeBottomMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatTopHingeBottomMiddle//Center//-${sliderDepth}" />
 		<point x="SeatTopHingeBottomMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatTopHingeBottomMiddle//Center//0" />
 	</path>
 	
 	<path name="SliderBottom" layer="MiddleFace" action="CUT" >
-		<point x="SeatBottomHingeTopMiddle//Center//+${upRight}/2" y="SeatBottomHingeTopMiddle//Center//0" />
-		<point x="SeatBottomHingeTopMiddle//Center//+${upRight}/2" y="SeatBottomHingeTopMiddle//Center//${sliderDepth}" />
+		<point x="SeatBottomHingeTopMiddle//Center//+${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//+${upRight}" y="SeatBottomHingeTopMiddle//Center//${sliderDepth}" />
 		<point x="SeatBottomHingeTopMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopMiddle//Center//${sliderDepth}" />
 		<point x="SeatBottomHingeTopMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
