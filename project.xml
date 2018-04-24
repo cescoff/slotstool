@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project>
     <name>Slot Stool</name>
-    <thumbnail-url>https://github.com/cescoff/rattrapstool/raw/master/stool_thumbnail.PNG</thumbnail-url>
+    <thumbnail-url>https://github.com/cescoff/slotstool/raw/master/stool_thumbnail.PNG</thumbnail-url>
     <previews>
-        <url>https://github.com/cescoff/rattrapstool/raw/master/stool_preview.jpg</url>
+        <url>https://github.com/cescoff/slotstool/raw/master/stool_preview.jpg</url>
     </previews>
     <description>Customizable flat folding stool made out of wood</description>
     <presentation>&lt;p&gt;The folding stool prototype.&lt;/p&gt;&lt;p&gt;This project proves the concept of the wood based hinge (Twice). The hinge is calculated dynamically depending on the desired parameters.&lt;/p&gt;&lt;p&gt;The hinge and sliders are distributed through 3 different layers. The one in the middle embeds the axles holes.&lt;/p&gt;&lt;p&gt;The mounting instructions are provided within the zip archive that can be downloaded&lt;/p&gt;&lt;p&gt;Sources are available here: https://github.com/cescoff/rattrapstool&lt;/p&gt;&lt;p&gt;Enjoy it, it is free&lt;/p&gt;</presentation>
