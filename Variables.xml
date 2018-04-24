@@ -38,7 +38,7 @@
     <expression name="axleRadius" expression="Math.max(${fullAxleRadius}/${aspectRatio}, 2.5)"/>
     <expression name="roundCornersRadius" expression="${fullRoundCornersRadius}/${aspectRatio}"/>
     
-    <expression name="chairThickness" print="true" expression="3*${woodSpan}"/>
+    <expression name="chairThickness" print="true" expression="3*${woodSpan}+1"/>
     
     <expression name="seatHeight" print="true" expression="${fullSeatHeight}/${aspectRatio}-${chairThickness}/2"/>
     <expression name="seatLength" print="true" expression="${fullSeatLength}/${aspectRatio}"/>
