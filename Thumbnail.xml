@@ -5,11 +5,10 @@
     <point x="${xR}" y="${yR}" name="R" layer="Main"/>
     <point x="${xP}" y="${yP}" name="P" layer="Main"/>
     <point x="${xS}" y="${yS}" name="S" layer="Main"/>
-    <point x="${xT}" y="${yT}" name="T" layer="Main"/>
 
-	<path name="FT" layer="Main" action="VIEW">
+	<path name="FS" layer="Main" action="VIEW">
 		<point x="F//Center//0" y="F//Center//0" />
-		<point x="T//Center//0" y="T//Center//0" />
+		<point x="S//Center//0" y="S//Center//0" />
 	</path>
 	
 	<path name="PR" layer="Main" action="VIEW">
