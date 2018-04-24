@@ -15,9 +15,9 @@
     <documentation-url>https://raw.githubusercontent.com/cescoff/slotstool/master/Documentation.html</documentation-url>
     <default>
         <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">410</variable>
-        <variable name="fullSeatLength" display-name="Seat Length" unit="mm" description="In millimeters">330</variable>
-        <variable name="fullSeatWidth" display-name="Seat Width" unit="mm" description="In millimeters">330</variable>
-        <variable name="fullUpRight" display-name="Upright" unit="mm" description="In millimeters">60</variable>
+        <variable name="fullSeatLength" display-name="Seat Length" unit="mm" description="In millimeters">320</variable>
+        <variable name="fullSeatWidth" display-name="Seat Width" unit="mm" description="In millimeters">370</variable>
+        <variable name="fullUpRight" display-name="Upright" unit="mm" description="In millimeters">50</variable>
         <variable name="fullHandleHeight" display-name="Handle Height" unit="mm" description="In millimeters">35</variable>
         <variable name="fullHandleLength" display-name="Handle Length" unit="mm" description="In millimeters">100</variable>
         <variable name="fullLaserCutLength" display-name="Laser cut length" unit="mm" description="In millimeters">765</variable>
