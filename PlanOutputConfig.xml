@@ -2,13 +2,12 @@
 <output-config>
     <outputs>
         <output name="A" format="SVG">
-            <layer>Main</layer>
+            <layer>Cover</layer>
 <!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
         <output name="B" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
-            <layer>Cover</layer>
             <layer>TopLeg</layer>
 <!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
