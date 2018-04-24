@@ -16,7 +16,7 @@
     <variable name="fullAxleRadius" value="4"/>
     
     <variable name="fullHingeToothWidth" value="12" print="true"/>
-    <variable name="fullSeatHingeToothHeight" value="33" print="true"/>
+    <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
     <variable name="fullWoodSpan" value="8" print="true"/>
     <variable name="fullThinWoodSpan" value="5" print="true"/>
     <variable name="fullHoleRadius" value="3.9"/>
