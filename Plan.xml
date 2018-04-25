@@ -207,7 +207,13 @@
 	</path>
 	
 	
-  
+  	<!-- TOP FRAME -->
+	
+	<path name="CoverBody" layer="Cover" action="CUT" >
+		<point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//0" y="HandCarryBottomCircle//Center//0" />
+	</path>	
+
 	<!-- HANDLE -->
 	<circle center-x="SeatTopHingeBottomAxleCut//Center//-(4/3)*${upRight}" center-y="SeatTopHingeBottomAxleCut//Center//+${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Cover"/>
 	<circle center-x="SeatBottomHingeTopAxleCut//Center//-(4/3)*${upRight}" center-y="SeatBottomHingeTopAxleCut//Center//-${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Cover"/>
