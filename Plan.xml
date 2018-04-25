@@ -126,12 +126,12 @@
 		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
 	</path>
   
-	<path name="LegTopFrameSeat3" layer="FullLeg" action="CUT" >
+	<path name="LegMiddleFrameSeat3" layer="FullLeg" action="CUT" >
 		<point x="SeatTopHingeBottomMiddle//Center//+0.6*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
 		<point x="SeatTopHingeBottomMiddle//Center//+1.1*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
 	</path>
   
-	<path name="LegTopFrameSeat4" layer="FullLeg" action="CUT" >
+	<path name="LegMiddleFrameSeat4" layer="FullLeg" action="CUT" >
 		<point x="SeatBottomHingeTopMiddle//Center//+0.6*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
 		<point x="SeatBottomHingeTopMiddle//Center//+1.1*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
