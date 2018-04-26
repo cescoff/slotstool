@@ -211,7 +211,13 @@
 	
 	<path name="CoverBody" layer="Cover" action="CUT" >
 		<point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2" y="GlobalTopLeftPoint//Center//0" />
-		<point x="GlobalTopLeftPoint//Center//0" y="HandCarryBottomCircle//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2+${seatLength}" y="HandCarryBottomCircle//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2+${seatLength}" y="HandCarryBottomCircle//Center//${seatWidth}" />
+		<point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2" y="GlobalTopLeftPoint//Center//${seatWidth}" />
+		<point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//${seatWidth}" />
+		<point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2" y="GlobalTopLeftPoint//Center//${seatWidth}" />
 	</path>	
 
 	<!-- HANDLE -->
