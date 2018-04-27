@@ -16,20 +16,21 @@
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>FullLeg</layer>
+            <layer>LegWithoutEnforcement</layer>
 <!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
         <output name="D" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>MiddleFace</layer>
-            <layer>FullLeg</layer>
+            <layer>LegWithoutEnforcement</layer>
 <!--			<splitter point1="CutLeftTop" point2="CutLeftBottom" />-->
         </output>
         <output name="E" format="SVG">
             <layer>Main</layer>
             <layer>Holes</layer>
             <layer>BottomFace</layer>
-            <layer>FullLeg</layer>
+            <layer>LegWithoutEnforcement</layer>
 <!--			<splitter point1="CutRightTop" point2="CutRightBottom" />-->
         </output>
     </outputs>
