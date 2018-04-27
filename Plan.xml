@@ -110,8 +110,8 @@
 	</path>
 
 	<path name="MiddleLegTop" layer="Main" action="CUT" >
-		<point x="SeatTopHingeBottomLeft//Center//+${PR}+2*${axleRadius}+${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
-		<point x="SeatBottomHingeTopLeft//Center//+${PR}+2*${axleRadius}+${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
+		<point x="SeatTopHingeBottomLeft//Center//+${PR}+2.5*${axleRadius}+${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
+		<point x="SeatBottomHingeTopLeft//Center//+${PR}+2.5*${axleRadius}+${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
 	</path>
 
 <!--	<path name="MiddleLegTopFrameBottom" layer="TopLeg" action="CUT" >
