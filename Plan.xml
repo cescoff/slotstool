@@ -216,8 +216,8 @@
     <circle center-x="SeatBottomHingeBottomRight//Center//-${upRight}/2" center-y="SeatBottomHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomRight" layer="Holes"  />
     <circle center-x="SeatBottomHingeBottomRight//Center//-${seatLength}+2*${upRight}" center-y="SeatBottomHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomLeft" layer="Holes"  />
 
-    <circle center-x="SeatTopHingeBottomMiddle//Center//-${PR}+${upRight}" center-y="SeatTopHingeBottomMiddle//Center//${handleLength}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterLeft" layer="Holes" />
-    <circle center-x="SeatTopHingeBottomMiddle//Center//-2.5*${upRight}" center-y="SeatTopHingeBottomMiddle//Center//${handleLength}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterRight" layer="Holes" />
+    <circle center-x="SeatTopHingeBottomMiddle//Center//-${PR}+2*${upRight}" center-y="SeatTopHingeBottomMiddle//Center//${handleLength}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterLeft" layer="Holes" />
+    <circle center-x="SeatTopHingeBottomMiddle//Center//-1.5*${upRight}" center-y="SeatTopHingeBottomMiddle//Center//${handleLength}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterRight" layer="Holes" />
 
   	<!-- TOP FRAME -->
 	
