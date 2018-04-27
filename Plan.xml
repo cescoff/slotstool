@@ -209,8 +209,8 @@
 	
 	<path name="CoverBody" layer="Cover" action="CUT" >
 		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//0" />
-		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}" y="HandCarryBottomCircle//Center//0" />
-		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}" y="HandCarryBottomCircle//Center//${seatWidth}" />
+		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
 		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
 		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//0" />
 		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//0" />
@@ -220,12 +220,12 @@
 
     <path name="CoverLegTop" layer="Cover" action="CUT" >
         <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}-${fullHandleLength})/2" />
-        <point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}-${fullHandleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}-${fullHandleLength})/2" />
     </path>
 
     <path name="CoverLegBottom" layer="Cover" action="CUT" >
         <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}+${fullHandleLength})/2" />
-        <point x="GlobalTopLeftPoint//Center//${PR}-${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}+${fullHandleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}+${fullHandleLength})/2" />
     </path>
 
     <arc name="RoundCornerLegCoverTopLeft" layer="Cover" radius="${upRight}" action="CUT">
