@@ -33,7 +33,7 @@
 	                auto-axle-distance-cut="false"
 			sharp-angle-layer="BottomFace">
 		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//0"/>
-		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//(${seatMountWidth}-${fullHandleLength})/2"/>
+		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//(${seatMountWidth}-${handleLength})/2"/>
 	</hinge>
 
 	<hinge 
@@ -52,7 +52,7 @@
 			layer="Main"
 		        auto-axle-distance-cut="false"
 			sharp-angle-layer="BottomFace">
-		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//(${seatMountWidth}+${fullHandleLength})/2"/>
+		<point1 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//(${seatMountWidth}+${handleLength})/2"/>
 		<point2 x="GlobalTopLeftPoint//Center//+0" y="GlobalTopLeftPoint//Center//${seatMountWidth}"/>
 	</hinge>
 
@@ -205,6 +205,20 @@
 		<point x="SeatBottomHingeTopMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
 
+    <!-- HOLES -->
+    <circle center-x="SeatTopHingeTopMiddle//Center//-${PR}+2.5*${upRight}" center-y="SeatTopHingeTopMiddle//Center//${upRight}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegTopLeft" layer="Holes" />
+    <circle center-x="SeatTopHingeTopMiddle//Center//-1.5*${upRight}" center-y="SeatTopHingeTopMiddle//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegTopRight" layer="Holes" />
+    <circle center-x="SeatBottomHingeBottomMiddle//Center//-1.5*${upRight}" center-y="SeatBottomHingeBottomMiddle//Center//-${upRight}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegBottomRight" layer="Holes" />
+    <circle center-x="SeatBottomHingeBottomMiddle//Center//-${PR}+2.5*${upRight}" center-y="SeatBottomHingeBottomMiddle//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegBottomLeft" layer="Holes" />
+
+    <circle center-x="SeatTopHingeTopRight//Center//-${seatLength}+2*${upRight}" center-y="SeatTopHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopLeft" layer="Holes"  />
+    <circle center-x="SeatTopHingeTopRight//Center//-${upRight}/2" center-y="SeatTopHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopRight" layer="Holes" />
+    <circle center-x="SeatBottomHingeBottomRight//Center//-${upRight}/2" center-y="SeatBottomHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomRight" layer="Holes"  />
+    <circle center-x="SeatBottomHingeBottomRight//Center//-${seatLength}+2*${upRight}" center-y="SeatBottomHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomLeft" layer="Holes"  />
+
+    <circle center-x="SeatTopHingeBottomMiddle//Center//-${PR}+${upRight}" center-y="SeatTopHingeBottomMiddle//Center//${handleLength}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterLeft" layer="Holes" />
+    <circle center-x="SeatTopHingeBottomMiddle//Center//-2.5*${upRight}" center-y="SeatTopHingeBottomMiddle//Center//${handleLength}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterRight" layer="Holes" />
+
   	<!-- TOP FRAME -->
 	
 	<path name="CoverBody" layer="Cover" action="CUT" >
@@ -219,13 +233,13 @@
 	</path>
 
     <path name="CoverLegTop" layer="Cover" action="CUT" >
-        <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}-${fullHandleLength})/2" />
-        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}-${fullHandleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2" />
     </path>
 
     <path name="CoverLegBottom" layer="Cover" action="CUT" >
-        <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}+${fullHandleLength})/2" />
-        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}+${fullHandleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2" />
     </path>
 
     <arc name="RoundCornerLegCoverTopLeft" layer="Cover" radius="${upRight}" action="CUT">
@@ -289,8 +303,8 @@
     <circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegCenterRight" layer="Cover" />
 
 	<!-- HANDLE -->
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-(4/3)*${upRight}" center-y="GlobalTopLeftPoint//Center//(${seatWidth}-${fullHandleLength})/2+${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Cover"/>
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-(4/3)*${upRight}" center-y="GlobalTopLeftPoint//Center//(${seatWidth}+${fullHandleLength})/2-${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Cover"/>
+	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-(4/3)*${upRight}" center-y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2+${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Cover"/>
+	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-(4/3)*${upRight}" center-y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2-${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Cover"/>
 	<path name="HandCarryTopLeft" layer="Cover" action="CUT" >
 		<point x="HandCarryTopCircle//RadiusLeft//0" y="HandCarryTopCircle//RadiusLeft//0" />
 		<point x="HandCarryBottomCircle//RadiusLeft//0" y="HandCarryBottomCircle//RadiusLeft//0" />
