@@ -120,8 +120,8 @@
 	</path>-->
 
 	<path name="LegTopFrameSeat1" layer="TopLeg" action="CUT" >
-		<point x="SeatTopHingeBottomMiddle//Center//+1.1*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
-		<point x="SeatBottomHingeTopMiddle//Center//+1.1*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
+		<point x="SeatTopHingeBottomMiddle//Center//+1.1*${upRight}" y="SeatTopHingeTopMiddle//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//+1.1*${upRight}" y="SeatBottomHingeBottomMiddle//Center//0" />
 	</path>
 
 	<path name="LegTopFrameSeat2" layer="TopLeg" action="CUT" >
@@ -129,22 +129,32 @@
 		<point x="SeatBottomHingeTopMiddle//Center//+0.6*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
 
-	<path name="LegMiddleFrameTop" layer="LegWithoutEnforcement" action="CUT" >
+    <path name="LegTopFrameSeat3" layer="TopLeg" action="CUT" >
+        <point x="SeatTopHingeTopMiddle//Center//-1.1*${upRight}" y="SeatTopHingeTopMiddle//Center//0" />
+        <point x="SeatTopHingeBottomMiddle//Center//-1.1*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
+    </path>
+
+    <path name="LegTopFrameSeat4" layer="TopLeg" action="CUT" >
+        <point x="SeatBottomHingeTopMiddle//Center//-1.1*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
+        <point x="SeatBottomHingeBottomMiddle//Center//-1.1*${upRight}" y="SeatBottomHingeBottomMiddle//Center//0" />
+    </path>
+
+    <path name="LegMiddleFrameTop" layer="FullLeg" action="CUT" >
 		<point x="SeatTopHingeBottomLeft//Center//0" y="SeatTopHingeBottomLeft//Center//0" />
 		<point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
 	</path>
 
-	<path name="LegMiddleFrameBottom" layer="LegWithoutEnforcement" action="CUT" >
+	<path name="LegMiddleFrameBottom" layer="FullLeg" action="CUT" >
 		<point x="SeatBottomHingeTopLeft//Center//0" y="SeatBottomHingeTopLeft//Center//0" />
 		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
 	</path>
   
-	<path name="LegMiddleFrameSeat3" layer="FullLeg" action="CUT" >
+	<path name="LegMiddleFrameSeat1" layer="LegWithoutEnforcement" action="CUT" >
 		<point x="SeatTopHingeBottomMiddle//Center//+0.6*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
 		<point x="SeatTopHingeBottomMiddle//Center//+1.1*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
 	</path>
   
-	<path name="LegMiddleFrameSeat4" layer="FullLeg" action="CUT" >
+	<path name="LegMiddleFrameSeat2" layer="LegWithoutEnforcement" action="CUT" >
 		<point x="SeatBottomHingeTopMiddle//Center//+0.6*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
 		<point x="SeatBottomHingeTopMiddle//Center//+1.1*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
@@ -211,10 +221,10 @@
     <circle center-x="SeatBottomHingeBottomMiddle//Center//-1.5*${upRight}" center-y="SeatBottomHingeBottomMiddle//Center//-${upRight}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegBottomRight" layer="Holes" />
     <circle center-x="SeatBottomHingeBottomMiddle//Center//-${PR}+2.5*${upRight}" center-y="SeatBottomHingeBottomMiddle//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegBottomLeft" layer="Holes" />
 
-    <circle center-x="SeatTopHingeTopRight//Center//-${seatLength}+2*${upRight}" center-y="SeatTopHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopLeft" layer="Holes"  />
-    <circle center-x="SeatTopHingeTopRight//Center//-${upRight}/2" center-y="SeatTopHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopRight" layer="Holes" />
-    <circle center-x="SeatBottomHingeBottomRight//Center//-${upRight}/2" center-y="SeatBottomHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomRight" layer="Holes"  />
-    <circle center-x="SeatBottomHingeBottomRight//Center//-${seatLength}+2*${upRight}" center-y="SeatBottomHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomLeft" layer="Holes"  />
+    <circle center-x="SeatTopHingeTopRight//Center//-${seatLength}+1.5*${upRight}" center-y="SeatTopHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopLeft" layer="Holes"  />
+    <circle center-x="SeatTopHingeTopRight//Center//-${upRight}" center-y="SeatTopHingeTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopRight" layer="Holes" />
+    <circle center-x="SeatBottomHingeBottomRight//Center//-${upRight}" center-y="SeatBottomHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomRight" layer="Holes"  />
+    <circle center-x="SeatBottomHingeBottomRight//Center//-${seatLength}+1.5*${upRight}" center-y="SeatBottomHingeBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomLeft" layer="Holes"  />
 
     <circle center-x="SeatBottomHingeTopLeft//Center//2*${upRight}" center-y="SeatBottomHingeTopLeft//Center//-${handleLength}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterLeft" layer="Holes" />
     <circle center-x="SeatBottomHingeTopLeft//Center//2*${upRight}+${PR}-4*${upRight}" center-y="SeatBottomHingeTopLeft//Center//-${handleLength}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterRight" layer="Holes" />
