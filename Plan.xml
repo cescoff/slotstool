@@ -185,6 +185,16 @@
 		<point x="SeatBottomHingeTopLeft//Center//${PR}+${upRight}+${axleRadius}+${middleExtraLength}" y="SeatBottomHingeTopLeft//Center//0" />
 	</path>
 
+	<path name="MiddleLegFootExtrude1" layer="MiddleFace" action="CUT" >
+		<point x="SeatTopHingeBottomLeft//Center//2*${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
+		<point x="SeatBottomHingeTopLeft//Center//2*${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
+	</path>
+
+	<path name="MiddleLegFootExtrude2" layer="BottomFace" action="CUT" >
+		<point x="SeatTopHingeBottomLeft//Center//2*${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
+		<point x="SeatBottomHingeTopLeft//Center//2*${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
+	</path>
+
 	<path name="TopLegAxleBottom" layer="MiddleFace" action="CUT" >
 		<point x="SeatTopHingeBottomLeft//Center//${PR}/2-${axleRadius}" y="SeatTopHingeBottomLeft//Center//0" />
 		<point x="SeatTopHingeTopLeft//Center//${PR}/2-${axleRadius}" y="SeatTopHingeTopLeft//Center//0" />
@@ -248,12 +258,12 @@
 
     <path name="CoverLegTop" layer="Cover" action="CUT" >
         <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2" />
-        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2" />
     </path>
 
     <path name="CoverLegBottom" layer="Cover" action="CUT" >
         <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2" />
-        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}/2" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2" />
     </path>
 
     <arc name="RoundCornerLegCoverTopLeft" layer="Cover" radius="${upRight}" action="CUT">
