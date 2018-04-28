@@ -53,7 +53,9 @@
     <expression name="seatMountLength" print="true" expression="${seatLength}-${upRight}"/>
     <expression name="seatMountWidth" print="true" expression="${seatWidth}-${upRight}"/>
     <expression name="seatMountHeight" print="true" expression="${seatHeight}-${stoolWoodSpan}/2"/>
-    
+
+    <expression name="middleExtraLength" print="true" expression="((${woodSpan}+${thinWoodSpan})*${seatMountHeight})/${seatMountLength}"/>
+
     <!-- End of autoscale expressions -->
     
     <!-- Global expressions -->
