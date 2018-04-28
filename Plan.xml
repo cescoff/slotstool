@@ -225,10 +225,10 @@
     <circle center-x="SeatBottomHingeBottomLeft//Center//2*${upRight}" center-y="SeatBottomHingeBottomLeft//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegBottomRight" layer="Holes" />
     <circle center-x="SeatBottomHingeBottomLeft//Center//2*${upRight}+${PR}-4*${upRight}" center-y="SeatBottomHingeBottomLeft//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegBottomLeft" layer="Holes" />
 
-    <circle center-x="SeatTopRight//Center//-${upRight}-${seatLength}+${upRight}" center-y="SeatTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopLeft" layer="Holes"  />
+    <circle center-x="SeatTopRight//Center//-${upRight}-${seatLength}+2*${upRight}" center-y="SeatTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopLeft" layer="Holes"  />
     <circle center-x="SeatTopRight//Center//-${upRight}" center-y="SeatTopRight//Center//${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatTopRight" layer="Holes" />
     <circle center-x="SeatBottomRight//Center//-${upRight}" center-y="SeatBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomRight" layer="Holes"  />
-    <circle center-x="SeatBottomRight//Center//-${upRight}-${seatLength}+${upRight}" center-y="SeatBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomLeft" layer="Holes"  />
+    <circle center-x="SeatBottomRight//Center//-${upRight}-${seatLength}+2*${upRight}" center-y="SeatBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomLeft" layer="Holes"  />
 
     <circle center-x="SeatBottomHingeTopLeft//Center//${upRight}+${middleExtraLength}" center-y="SeatBottomHingeTopLeft//Center//-${handleLength}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterLeft" layer="Holes" />
     <circle center-x="SeatBottomHingeTopLeft//Center//${upRight}+${PR}-4*${upRight}+${middleExtraLength}" center-y="SeatBottomHingeTopLeft//Center//-${handleLength}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterRight" layer="Holes" />
