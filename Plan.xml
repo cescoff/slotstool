@@ -367,10 +367,10 @@
 	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegTopRight" layer="Cover" />
 	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegBottomRight" layer="Cover" />
 	<circle center-x="GlobalTopLeftPoint//Center//${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegBottomLeft" layer="Cover" />
-	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatTopLeft" layer="Cover" />
-	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatTopRight" layer="Cover"  />
-	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatBottomRight" layer="Cover"  />
-	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatBottomLeft" layer="Cover"  />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+1.1*${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatTopLeft" layer="Cover" />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-1.1*${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatTopRight" layer="Cover"  />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-1.1*${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatBottomRight" layer="Cover"  />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+1.1*${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatBottomLeft" layer="Cover"  />
 
     <circle center-x="GlobalTopLeftPoint//Center//${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}/2" radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegCenterLeft" layer="Cover" />
     <circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegCenterRight" layer="Cover" />
