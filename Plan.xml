@@ -91,11 +91,18 @@
 	</arc>
 	
   	<!-- Leg -->
-	<path name="LegFrameSeat" layer="Main" action="CUT" >
-		<point x="SeatTopHingeBottomMiddle//Center//+1.1*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
+	<path name="LegFrameSeat1" layer="Main" action="CUT" >
+		<point x="SeatTopHingeBottomMiddle//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//0" />
 		<point x="SeatTopHingeBottomRight//Center//+${sliderExtraSpan}" y="SeatTopHingeBottomRight//Center//0" />
 		<point x="SeatBottomHingeTopRight//Center//+${sliderExtraSpan}" y="SeatBottomHingeTopRight//Center//0" />
-		<point x="SeatBottomHingeTopMiddle//Center//+1.1*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//0" />
+	</path>
+
+	<path name="LegFrameSeat2" layer="Main" action="CUT" >
+		<point x="SeatTopHingeBottomMiddle//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//0.5" />
+		<point x="SeatTopHingeBottomRight//Center//+${sliderExtraSpan}" y="SeatTopHingeBottomRight//Center//0.5" />
+		<point x="SeatBottomHingeTopRight//Center//+${sliderExtraSpan}" y="SeatBottomHingeTopRight//Center//-0.5" />
+		<point x="SeatBottomHingeTopMiddle//Center//${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//-0.5" />
 	</path>
 
 	<path name="LegFrameLeg1" layer="Main" action="CUT" >
@@ -104,8 +111,18 @@
 	</path>
 
 	<path name="LegFrameLeg2" layer="Main" action="CUT" >
+		<point x="SeatTopHingeBottomMiddle//Center//+0.6*${upRight}" y="SeatTopHingeBottomMiddle//Center//0.5" />
+		<point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//0.5" />
+	</path>
+
+	<path name="LegFrameLeg3" layer="Main" action="CUT" >
 		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
 		<point x="SeatBottomHingeTopMiddle//Center//+0.6*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
+	</path>
+
+	<path name="LegFrameLeg4" layer="Main" action="CUT" >
+		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//-0.5" />
+		<point x="SeatBottomHingeTopMiddle//Center//+0.6*${upRight}" y="SeatBottomHingeTopMiddle//Center//-0.5" />
 	</path>
 
 	<path name="LegTopFrame" layer="Main" action="CUT" >
@@ -124,8 +141,8 @@
 	</path>-->
 
 	<path name="LegTopFrameSeat1" layer="TopLeg" action="CUT" >
-		<point x="SeatTopHingeBottomMiddle//Center//+1.1*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
-		<point x="SeatBottomHingeTopMiddle//Center//+1.1*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
+		<point x="SeatTopHingeBottomMiddle//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
 
 	<path name="LegTopFrameSeat2" layer="TopLeg" action="CUT" >
@@ -134,13 +151,13 @@
 	</path>
 
     <path name="LegTopFrameSeat3" layer="TopLeg" action="CUT" >
-        <point x="SeatTopHingeTopMiddle//Center//-1.1*${upRight}" y="SeatTopHingeTopMiddle//Center//0" />
-        <point x="SeatTopHingeBottomMiddle//Center//-1.1*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
+        <point x="SeatTopHingeTopMiddle//Center//-1.1*${seatHingeToothHeight}" y="SeatTopHingeTopMiddle//Center//0" />
+        <point x="SeatTopHingeBottomMiddle//Center//-1.1*${seatHingeToothHeight}" y="SeatTopHingeBottomMiddle//Center//0" />
     </path>
 
     <path name="LegTopFrameSeat4" layer="TopLeg" action="CUT" >
-        <point x="SeatBottomHingeTopMiddle//Center//-1.1*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
-        <point x="SeatBottomHingeBottomMiddle//Center//-1.1*${upRight}" y="SeatBottomHingeBottomMiddle//Center//0" />
+        <point x="SeatBottomHingeTopMiddle//Center//-1.1*${seatHingeToothHeight}" y="SeatBottomHingeTopMiddle//Center//0" />
+        <point x="SeatBottomHingeBottomMiddle//Center//-1.1*${seatHingeToothHeight}" y="SeatBottomHingeBottomMiddle//Center//0" />
     </path>
 
     <path name="LegMiddleFrameTop" layer="FullLeg" action="CUT" >
@@ -155,24 +172,24 @@
   
 	<path name="LegMiddleFrameSeat1" layer="LegWithoutEnforcement" action="CUT" >
 		<point x="SeatTopHingeBottomMiddle//Center//+0.6*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
-		<point x="SeatTopHingeBottomMiddle//Center//+1.1*${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
+		<point x="SeatTopHingeBottomMiddle//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//0" />
 	</path>
   
 	<path name="LegMiddleFrameSeat2" layer="LegWithoutEnforcement" action="CUT" >
 		<point x="SeatBottomHingeTopMiddle//Center//+0.6*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
-		<point x="SeatBottomHingeTopMiddle//Center//+1.1*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
   
 	<!-- Sliders and Axles -->
 	
 	<path name="MiddleLegAxleBottom" layer="MiddleFace" action="CUT" >
-		<point x="SeatTopHingeBottomLeft//Center//${PR}/2+${upRight}-1.1*${upRight}-${axleRadius}+${middleExtraLength}" y="SeatTopHingeBottomLeft//Center//0" />
-		<point x="SeatBottomHingeTopLeft//Center//${PR}/2+${upRight}-1.1*${upRight}-${axleRadius}+${middleExtraLength}" y="SeatBottomHingeTopLeft//Center//0" />
+		<point x="SeatTopHingeBottomLeft//Center//${PR}/2+${upRight}-1.3*${sliderEndDistance}-${axleRadius}+${middleExtraLength}/2" y="SeatTopHingeBottomLeft//Center//0" />
+		<point x="SeatBottomHingeTopLeft//Center//${PR}/2+${upRight}-1.3*${sliderEndDistance}-${axleRadius}+${middleExtraLength}/2" y="SeatBottomHingeTopLeft//Center//0" />
 	</path>
 
 	<path name="MiddleLegAxleTop" layer="MiddleFace" action="CUT" >
-		<point x="SeatTopHingeBottomLeft//Center//${PR}/2+${upRight}+${axleRadius}+${middleExtraLength}" y="SeatTopHingeBottomLeft//Center//0" />
-		<point x="SeatBottomHingeTopLeft//Center//${PR}/2+${upRight}+${axleRadius}+${middleExtraLength}" y="SeatBottomHingeTopLeft//Center//0" />
+		<point x="SeatTopHingeBottomLeft//Center//${PR}/2+${upRight}+${axleRadius}+${middleExtraLength}/2" y="SeatTopHingeBottomLeft//Center//0" />
+		<point x="SeatBottomHingeTopLeft//Center//${PR}/2+${upRight}+${axleRadius}+${middleExtraLength}/2" y="SeatBottomHingeTopLeft//Center//0" />
 	</path>
 
 	<path name="MiddleLegRearAxleBottom" layer="MiddleFace" action="CUT" >
@@ -216,15 +233,15 @@
 	</path>
 
 	<path name="SliderTop" layer="MiddleFace" action="CUT" >
-		<point x="SeatTopHingeBottomMiddle//Center//+${upRight}" y="SeatTopHingeBottomMiddle//Center//0" />
-		<point x="SeatTopHingeBottomMiddle//Center//+${upRight}" y="SeatTopHingeBottomMiddle//Center//-${sliderDepth}" />
+		<point x="SeatTopHingeBottomMiddle//Center//+${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//0" />
+		<point x="SeatTopHingeBottomMiddle//Center//+${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//-${sliderDepth}" />
 		<point x="SeatTopHingeBottomMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatTopHingeBottomMiddle//Center//-${sliderDepth}" />
 		<point x="SeatTopHingeBottomMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatTopHingeBottomMiddle//Center//0" />
 	</path>
 	
 	<path name="SliderBottom" layer="MiddleFace" action="CUT" >
-		<point x="SeatBottomHingeTopMiddle//Center//+${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
-		<point x="SeatBottomHingeTopMiddle//Center//+${upRight}" y="SeatBottomHingeTopMiddle//Center//${sliderDepth}" />
+		<point x="SeatBottomHingeTopMiddle//Center//+${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//0" />
+		<point x="SeatBottomHingeTopMiddle//Center//+${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//${sliderDepth}" />
 		<point x="SeatBottomHingeTopMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopMiddle//Center//${sliderDepth}" />
 		<point x="SeatBottomHingeTopMiddle//Center//+${seatMountLength}+${axleRadius}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
@@ -240,48 +257,58 @@
     <circle center-x="SeatBottomRight//Center//-${upRight}" center-y="SeatBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomRight" layer="Holes"  />
     <circle center-x="SeatBottomRight//Center//-${upRight}-${seatLength}+2*${upRight}" center-y="SeatBottomRight//Center//-${upRight}/2" radius="${holeRadius}" action="CUT" name="CenterHoleSeatBottomLeft" layer="Holes"  />
 
-    <circle center-x="SeatBottomHingeTopLeft//Center//${upRight}+${middleExtraLength}" center-y="SeatBottomHingeTopLeft//Center//-${handleLength}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterLeft" layer="Holes" />
-    <circle center-x="SeatBottomHingeTopLeft//Center//${upRight}+${PR}-4*${upRight}+${middleExtraLength}" center-y="SeatBottomHingeTopLeft//Center//-${handleLength}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterRight" layer="Holes" />
+    <circle center-x="SeatBottomHingeTopLeft//Center//${sliderEndDistance}+${upRight}+2*{axleRadius}" center-y="SeatBottomHingeTopLeft//Center//-${handleLength}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterLeft" layer="Holes" />
+    <circle center-x="SeatBottomHingeTopLeft//Center//${sliderEndDistance}+${legCoverLength}-${upRight}+2*{axleRadius}" center-y="SeatBottomHingeTopLeft//Center//-${handleLength}/2" radius="${holeRadius}" action="CUT" name="CenterHoleLegCenterRight" layer="Holes" />
 
   	<!-- TOP FRAME -->
 	
 	<path name="CoverBody" layer="Cover" action="CUT" >
-		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//0" />
-		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}" y="GlobalTopLeftPoint//Center//0" />
-		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
-		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
-		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}" y="GlobalTopLeftPoint//Center//0" />
+		<point x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
+		<point x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
+		<point x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//0" />
 		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//0" />
 		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//${seatWidth}" />
-		<point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
+		<point x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
 	</path>
 
-    <path name="CoverLegTop" layer="Cover" action="CUT" >
+    <path name="CoverLegTop1" layer="Cover" action="CUT" >
         <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2" />
-        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2" />
     </path>
 
-    <path name="CoverLegBottom" layer="Cover" action="CUT" >
+	<path name="CoverLegTop2" layer="Cover" action="CUT" >
+		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2+0.5" />
+		<point x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2+0.5" />
+	</path>
+
+	<path name="CoverLegBottom1" layer="Cover" action="CUT" >
         <point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2" />
-        <point x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2" />
+        <point x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2" />
     </path>
 
-    <arc name="RoundCornerLegCoverTopLeft" layer="Cover" radius="${upRight}" action="CUT">
+	<path name="CoverLegBottom2" layer="Cover" action="CUT" >
+		<point x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2-0.5" />
+		<point x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2-0.5" />
+	</path>
+
+	<arc name="RoundCornerLegCoverTopLeft" layer="Cover" radius="${upRight}" action="CUT">
 		<center x="GlobalTopLeftPoint//Center//${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
 		<point1 x="GlobalTopLeftPoint//Center//0" y="GlobalTopLeftPoint//Center//${upRight}" />
 		<point2 x="GlobalTopLeftPoint//Center//${upRight}" y="GlobalTopLeftPoint//Center//0" />
 	</arc>
 
 	<arc name="RoundCornerLegCoverTopRight" layer="Cover" radius="${upRight}" action="CUT">
-		<center x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}-${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
-		<point1 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}-${upRight}" y="GlobalTopLeftPoint//Center//0" />
-		<point2 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
+		<center x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
+		<point1 x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" y="GlobalTopLeftPoint//Center//0" />
+		<point2 x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//${upRight}" />
 	</arc>
 
 	<arc name="RoundCornerLegCoverBottomRight" layer="Cover" radius="${upRight}" action="CUT">
-		<center x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}-${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
-		<point1 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
-		<point2 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}-${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
+		<center x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
+		<point1 x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
+		<point2 x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
 	</arc>
 
 	<arc name="RoundCornerLegCoverTopLeft" layer="Cover" radius="${upRight}" action="CUT">
@@ -291,44 +318,44 @@
 	</arc>
 
 	<arc name="RoundCornerSeatCoverTopLeft" layer="Cover" radius="${upRight}" action="CUT">
-		<center x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
-		<point1 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
-		<point2 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${upRight}" y="GlobalTopLeftPoint//Center//0" />
+		<center x="GlobalTopLeftPoint//Center//${legCoverLength}+${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
+		<point1 x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//${upRight}" />
+		<point2 x="GlobalTopLeftPoint//Center//${legCoverLength}+${upRight}" y="GlobalTopLeftPoint//Center//0" />
 	</arc>
 
 	<arc name="RoundCornerSeatCoverTopRight" layer="Cover" radius="${upRight}" action="CUT">
-		<center x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
-		<point1 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-${upRight}" y="GlobalTopLeftPoint//Center//0" />
-		<point2 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}" y="GlobalTopLeftPoint//Center//${upRight}" />
+		<center x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-${upRight}" y="GlobalTopLeftPoint//Center//${upRight}" />
+		<point1 x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-${upRight}" y="GlobalTopLeftPoint//Center//0" />
+		<point2 x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}" y="GlobalTopLeftPoint//Center//${upRight}" />
 	</arc>
 
 	<arc name="RoundCornerSeatCoverBottomRight" layer="Cover" radius="${upRight}" action="CUT">
-		<center x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
-		<point1 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
-		<point2 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
+		<center x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
+		<point1 x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
+		<point2 x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
 	</arc>
 
 	<arc name="RoundCornerSeatCoverBottomLeft" layer="Cover" radius="${upRight}" action="CUT">
-		<center x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
-		<point1 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
-		<point2 x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
+		<center x="GlobalTopLeftPoint//Center//${legCoverLength}+${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
+		<point1 x="GlobalTopLeftPoint//Center//${legCoverLength}+${upRight}" y="GlobalTopLeftPoint//Center//${seatWidth}" />
+		<point2 x="GlobalTopLeftPoint//Center//${legCoverLength}" y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" />
 	</arc>
 
 	<circle center-x="GlobalTopLeftPoint//Center//${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegTopLeft" layer="Cover" />
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}-${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegTopRight" layer="Cover" />
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegBottomRight" layer="Cover" />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegTopRight" layer="Cover" />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegBottomRight" layer="Cover" />
 	<circle center-x="GlobalTopLeftPoint//Center//${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegBottomLeft" layer="Cover" />
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatTopLeft" layer="Cover" />
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatTopRight" layer="Cover"  />
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatBottomRight" layer="Cover"  />
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatBottomLeft" layer="Cover"  />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatTopLeft" layer="Cover" />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatTopRight" layer="Cover"  />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatBottomRight" layer="Cover"  />
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}-${upRight}" radius="${holeRadius}" action="CUT" name="CenterHoleCoverSeatBottomLeft" layer="Cover"  />
 
     <circle center-x="GlobalTopLeftPoint//Center//${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}/2" radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegCenterLeft" layer="Cover" />
-    <circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegCenterRight" layer="Cover" />
+    <circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}-${upRight}" center-y="GlobalTopLeftPoint//Center//${seatWidth}/2"  radius="${holeRadius}" action="CUT" name="CenterHoleCoverLegCenterRight" layer="Cover" />
 
 	<!-- HANDLE -->
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-(4/3)*${upRight}" center-y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2+${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Cover"/>
-	<circle center-x="GlobalTopLeftPoint//Center//${PR}-2*${upRight}+${seatLength}-(4/3)*${upRight}" center-y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2-${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Cover"/>
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-(4/3)*${upRight}" center-y="GlobalTopLeftPoint//Center//(${seatWidth}-${handleLength})/2+${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryTopCircle" layer="Cover"/>
+	<circle center-x="GlobalTopLeftPoint//Center//${legCoverLength}+${seatLength}-(4/3)*${upRight}" center-y="GlobalTopLeftPoint//Center//(${seatWidth}+${handleLength})/2-${handleHeight}/2" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomCircle" layer="Cover"/>
 	<path name="HandCarryTopLeft" layer="Cover" action="CUT" >
 		<point x="HandCarryTopCircle//RadiusLeft//0" y="HandCarryTopCircle//RadiusLeft//0" />
 		<point x="HandCarryBottomCircle//RadiusLeft//0" y="HandCarryBottomCircle//RadiusLeft//0" />

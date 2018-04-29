@@ -4,7 +4,7 @@
 
     <!-- User defined vars -->
     <variable name="fullSeatHeight" value="410" print="true"/>
-    <variable name="fullSeatLength" value="320" print="true"/>
+    <variable name="fullSeatLength" value="340" print="true"/>
     <variable name="fullSeatWidth" value="370" print="true"/>
     <variable name="fullUpRight" value="50" print="true"/>
     <variable name="fullHandleHeight" value="35" print="true"/>
@@ -50,7 +50,7 @@
     <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}/${aspectRatio}"/>
 
     <expression name="stoolWoodSpan" print="true" expression="${woodSpan}*3+${thinWoodSpan}*2"/>
-    <expression name="seatMountLength" print="true" expression="${seatLength}-${upRight}-${upRight}/5"/>
+    <expression name="seatMountLength" print="true" expression="${seatLength}-${upRight}-${upRight}/3"/>
     <expression name="seatMountWidth" print="true" expression="${seatWidth}-${upRight}"/>
     <expression name="seatMountHeight" print="true" expression="${seatHeight}-${stoolWoodSpan}/2"/>
 
@@ -64,6 +64,9 @@
     <expression name="FR" print="true" expression="${seatMountHeight}"/>    
     <expression name="IF" print="true" expression="${PR}*${delta}"/>
     <expression name="IR" print="true" expression="${IF}"/>
+
+    <expression name="legCoverLength" print="true" expression="${PR}-2.5*${upRight}"/>
+    <expression name="sliderEndDistance" print="true" expression="1.5*${upRight}" />
 
     <!-- End of global expressions -->
     
