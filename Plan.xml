@@ -89,8 +89,20 @@
 		<point1 x="SeatBottomRight//Center//0" y="SeatBottomRight//Center//-${roundCornersRadius}" />
 		<point2 x="SeatBottomRight//Center//-${roundCornersRadius}" y="SeatBottomRight//Center//0" />
 	</arc>
-	
-  	<!-- Leg -->
+
+    <arc name="RoundCornerLegTop" layer="FullLeg" radius="${roundCornersRadius}" action="CUT">
+        <center x="SeatTopHingeBottomLeft//Center//+${roundCornersRadius}" y="SeatTopHingeBottomLeft//Center//-${roundCornersRadius}" />
+        <point1 x="SeatTopHingeBottomLeft//Center//0" y="SeatTopHingeBottomLeft//Center//-${roundCornersRadius}" />
+        <point2 x="SeatTopHingeBottomLeft//Center//${roundCornersRadius}" y="SeatTopHingeBottomLeft//Center//0" />
+    </arc>
+
+    <arc name="RoundCornerLegBottom" layer="FullLeg" radius="${roundCornersRadius}" action="CUT">
+        <center x="SeatBottomHingeTopLeft//Center//+${roundCornersRadius}" y="SeatBottomHingeTopLeft//Center//${roundCornersRadius}" />
+        <point1 x="SeatBottomHingeTopLeft//Center//0" y="SeatBottomHingeTopLeft//Center//${roundCornersRadius}" />
+        <point2 x="SeatBottomHingeTopLeft//Center//${roundCornersRadius}" y="SeatBottomHingeTopLeft//Center//0" />
+    </arc>
+
+    <!-- Leg -->
 	<path name="LegFrameSeat1" layer="Main" action="CUT" >
 		<point x="SeatTopHingeBottomMiddle//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//0" />
 		<point x="SeatTopHingeBottomRight//Center//+${sliderExtraSpan}" y="SeatTopHingeBottomRight//Center//0" />
