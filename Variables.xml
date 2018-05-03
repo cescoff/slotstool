@@ -19,7 +19,7 @@
     <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
     <variable name="fullWoodSpan" value="8" print="true"/>
     <variable name="fullThinWoodSpan" value="5" print="true"/>
-    <variable name="fullHoleRadius" value="3"/>
+    <variable name="fullHoleRadius" value="2.9"/>
     <variable name="fullSliderDepth" value="8"/>
     
     <!-- Boolean conditions -->
