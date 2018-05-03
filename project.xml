@@ -22,7 +22,7 @@
         <variable name="fullHandleLength" display-name="Handle Length" unit="mm" description="In millimeters">100</variable>
         <variable name="fullLaserCutLength" display-name="Laser cut length" unit="mm" description="In millimeters">765</variable>
         <variable name="aspectRatio" display-name="Aspect ratio" unit="" description="1 = 100%, 1.6 = 62%, 2 = 50%">1</variable>
-        <variable name="enlightAllLayers" type="boolean" display-name="Enlight legs" unit="" description="Check to have none full legs">false</variable>
+<!--        <variable name="enlightAllLayers" type="boolean" display-name="Enlight legs" unit="" description="Check to have none full legs">false</variable>-->
     </default>
     <printable>
         <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">410</variable>
@@ -33,6 +33,6 @@
         <variable name="fullHandleLength" display-name="Handle Length" unit="mm" description="In millimeters">100</variable>
         <variable name="fullLaserCutLength" display-name="Laser cut length" unit="mm" description="In millimeters">765</variable>
         <variable name="aspectRatio" display-name="Aspect ratio" unit="" description="1 = 100%, 1.6 = 62%, 2 = 50%">1</variable>
-        <variable name="enlightAllLayers" type="boolean" display-name="Enlight legs" unit="" description="Check to have none full legs">false</variable>
+<!--        <variable name="enlightAllLayers" type="boolean" display-name="Enlight legs" unit="" description="Check to have none full legs">false</variable>-->
     </printable>
 </project>
