@@ -7,8 +7,8 @@
     <variable name="fullSeatLength" value="340" print="true"/>
     <variable name="fullSeatWidth" value="370" print="true"/>
     <variable name="fullUpRight" value="50" print="true"/>
-    <variable name="fullHandleHeight" value="35" print="true"/>
-    <variable name="fullHandleLength" value="100" print="true"/>
+    <variable name="fullHandleHeight" value="25" print="true"/>
+    <variable name="fullHandleLength" value="90" print="true"/>
     <variable name="fullLaserCutLength" value="800"/>
     <variable name="fullRoundCornersRadius" value="20"/>
     <variable name="aspectRatio" value="1"/>
@@ -17,11 +17,13 @@
     
     <variable name="fullHingeToothWidth" value="12" print="true"/>
     <variable name="fullSeatHingeToothHeight" value="30" print="true"/>
-    <variable name="fullWoodSpan" value="8" print="true"/>
+    <variable name="fullWoodSpan" value="5" print="true"/>
     <variable name="fullThinWoodSpan" value="5" print="true"/>
     <variable name="fullHoleRadius" value="2.9"/>
     <variable name="fullSliderDepth" value="8"/>
-    
+    <variable name="fullLegHandleDistance" value="20"/>
+    <variable name="fullLegHandleWidth" value="80"/>
+
     <!-- Boolean conditions -->
     
     <variable name="enlightAllLayers" type="boolean" value="false" print="true" />
@@ -35,7 +37,7 @@
     <expression name="thinWoodSpan" print="true" expression="Math.max(${fullWoodSpan}/${aspectRatio}, 5)"/>
     <expression name="holeRadius" print="true" expression="Math.max(${fullHoleRadius}/${aspectRatio}, 2.9)"/>
     <expression name="sliderDepth" expression="Math.max(${fullSliderDepth}/${aspectRatio}, 4)"/>
-    <expression name="axleRadius" expression="Math.max(${fullAxleRadius}/${aspectRatio}, 2.5)"/>
+    <expression name="axleRadius" expression="${woodSpan}/2"/>
     <expression name="roundCornersRadius" expression="${fullRoundCornersRadius}/${aspectRatio}"/>
     
     <expression name="chairThickness" print="true" expression="3*${woodSpan}+1"/>
@@ -46,6 +48,8 @@
     <expression name="upRight" print="true" expression="${fullUpRight}/${aspectRatio}"/>
     <expression name="handleHeight" print="true" expression="${fullHandleHeight}/${aspectRatio}"/>
     <expression name="handleLength" print="true" expression="${fullHandleLength}/${aspectRatio}"/>
+    <expression name="legHandleDistance" print="true" expression="${fullLegHandleDistance}/${aspectRatio}"/>
+    <expression name="legHandleWidth" print="true" expression="${fullLegHandleWidth}/${aspectRatio}"/>
 
     <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}/${aspectRatio}"/>
 
@@ -83,7 +87,7 @@
     <expression name="yI" print="true" expression="(${yR}-${yP})/2"/>
     <!-- End of dynamic thumbnail expressions -->
     
-    <expression name="sliderExtraSpan" print="true" expression="3*${axleRadius}"/>
+    <expression name="sliderExtraSpan" print="true" expression="4*${axleRadius}"/>
     
     <expression name="CutLeftX" print="true" expression="${borderdistance}-${laserCutLength}+${PR}+${seatLength}" />
     <expression name="CutRightX" print="true" expression="${borderdistance}+${laserCutLength}" />
@@ -92,5 +96,7 @@
     <expression name="StoolWidth" print="true" expression="${seatMountWidth}" />
     
     <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 1.6)*(${aspectRatio} - 2)" validation="==0" />
+    <validation name="Wood span must be 5 or 8 mm" expression="(${fullWoodSpan} - 5)*(${fullWoodSpan} - 8)" validation="==0" />
+    <validation name="Central leg is too large" expression="${handleLength}-1.1*(${seatWidth}/3)" validation="<=0" />
 
 </variables>
