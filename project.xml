@@ -19,7 +19,7 @@
         <variable name="fullSeatWidth" display-name="Seat Width" unit="mm" description="In millimeters">370</variable>
         <variable name="fullUpRight" display-name="Upright" unit="mm" description="In millimeters">50</variable>
         <variable name="fullHandleHeight" display-name="Handle Height" unit="mm" description="In millimeters">25</variable>
-        <variable name="fullHandleLength" display-name="Central leg width" unit="mm" description="In millimeters">90</variable>
+        <variable name="fullCentralLegWidth" display-name="Central leg width" unit="mm" description="In millimeters">90</variable>
         <variable name="fullLaserCutLength" display-name="Laser cut length" unit="mm" description="In millimeters">765</variable>
         <variable name="aspectRatio" display-name="Aspect ratio" unit="" description="1 = 100%, 1.6 = 62%, 2 = 50%">1</variable>
         <variable name="fullWoodSpan" display-name="Body wood span" unit="" description="5 or 8">5</variable>
@@ -31,7 +31,7 @@
         <variable name="fullSeatWidth" display-name="Seat Width" unit="mm" description="In millimeters">330</variable>
         <variable name="fullUpRight" display-name="Upright" unit="mm" description="In millimeters">50</variable>
         <variable name="fullHandleHeight" display-name="Handle Height" unit="mm" description="In millimeters">25</variable>
-        <variable name="fullHandleLength" display-name="Central leg width" unit="mm" description="In millimeters">90</variable>
+        <variable name="fullCentralLegWidth" display-name="Central leg width" unit="mm" description="In millimeters">90</variable>
         <variable name="fullLaserCutLength" display-name="Laser cut length" unit="mm" description="In millimeters">765</variable>
         <variable name="aspectRatio" display-name="Aspect ratio" unit="" description="1 = 100%, 1.6 = 62%, 2 = 50%">1</variable>
         <variable name="fullWoodSpan" display-name="Body wood span" unit="" description="5 or 8">5</variable>

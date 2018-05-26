@@ -22,7 +22,7 @@
     <variable name="fullHoleRadius" value="2.9"/>
     <variable name="fullSliderDepth" value="8"/>
     <variable name="fullLegHandleDistance" value="20"/>
-    <variable name="fullLegHandleWidth" value="80"/>
+    <variable name="fullCentralLegWidth" value="80"/>
 
     <!-- Boolean conditions -->
     
@@ -49,7 +49,7 @@
     <expression name="handleHeight" print="true" expression="${fullHandleHeight}/${aspectRatio}"/>
     <expression name="handleLength" print="true" expression="${fullHandleLength}/${aspectRatio}"/>
     <expression name="legHandleDistance" print="true" expression="${fullLegHandleDistance}/${aspectRatio}"/>
-    <expression name="legHandleWidth" print="true" expression="${fullLegHandleWidth}/${aspectRatio}"/>
+    <expression name="centralLegWidth" print="true" expression="${fullCentralLegWidth}/${aspectRatio}"/>
 
     <expression name="laserCutLength" print="true" expression="${fullLaserCutLength}/${aspectRatio}"/>
 
