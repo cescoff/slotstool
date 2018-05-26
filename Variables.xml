@@ -70,7 +70,7 @@
     <expression name="IR" print="true" expression="${IF}"/>
 
     <expression name="legCoverLength" print="true" expression="${PR}-2.5*${upRight}"/>
-    <expression name="sliderEndDistance" print="true" expression="1.5*${upRight}" />
+    <expression name="sliderEndDistance" print="true" expression="${upRight}-${axleRadius}" />
 
     <!-- End of global expressions -->
     
