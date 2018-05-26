@@ -134,13 +134,15 @@
 		<point x="SeatTopHingeBottomAxle2//Center//2*${axleRadius}" y="SeatTopHingeBottomAxle2//Center//1" />
         <point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//1" />
 		<point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
+        <point x="SeatTopHingeBottomAxle2//Center//2*${axleRadius}" y="SeatTopHingeBottomAxle2//Center//0" />
 	</path>
 
 	<path name="LegFrameLeg2" layer="Main" action="CUT" >
         <point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//0" />
-		<point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//1" />
-		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//1" />
+		<point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//-1" />
+		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//-1" />
         <point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
+        <point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//0" />
 	</path>
 
 <!--	<path name="LegFrameLeg3" layer="Main" action="CUT" >
@@ -169,8 +171,8 @@
 	</path>-->
 
 	<path name="LegTopFrameSeat1" layer="TopLeg" action="CUT" >
-		<point x="SeatTopHingeBottomAxle2//Center//2*${axleRadius}" y="SeatTopHingeBottomAxle2//Center//0" />
-		<point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//0" />
+		<point x="SeatTopHingeRightTeethEndBottom//Center//0" y="SeatTopHingeRightTeethEndBottom//Center//0" />
+		<point x="SeatBottomHingeRightTeethEndTop//Center//0" y="SeatBottomHingeRightTeethEndTop//Center//0" />
 	</path>
 
 	<path name="LegTopFrameSeat2" layer="TopLeg" action="CUT" >
@@ -214,17 +216,19 @@
     </path>
 
     <path name="LegMiddleFrameSeat1" layer="LegWithoutEnforcement" action="CUT" >
-        <point x="SeatTopHingeBottomAxle2//Center//2*${axleRadius}" y="SeatTopHingeBottomAxle2//Center//0" />
+        <point x="SeatTopHingeRightTeethEndBottom//Center//0" y="SeatTopHingeRightTeethEndBottom//Center//0" />
         <point x="SeatTopHingeBottomAxle2//Center//${upRight}-${axleRadius}" y="SeatTopHingeBottomAxle2//Center//0" />
-        <point x="SeatTopHingeBottomAxle2//Center//2*${axleRadius}" y="SeatTopHingeBottomAxle2//Center//1" />
         <point x="SeatTopHingeBottomAxle2//Center//${upRight}-${axleRadius}" y="SeatTopHingeBottomAxle2//Center//1" />
+        <point x="SeatTopHingeRightTeethEndBottom//Center//0" y="SeatTopHingeRightTeethEndBottom//Center//1" />
+        <point x="SeatTopHingeRightTeethEndBottom//Center//0" y="SeatTopHingeRightTeethEndBottom//Center//0" />
 	</path>
   
 	<path name="LegMiddleFrameSeat2" layer="LegWithoutEnforcement" action="CUT" >
-        <point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//0" />
+        <point x="SeatBottomHingeRightTeethEndTop//Center//0" y="SeatBottomHingeRightTeethEndTop//Center//0" />
         <point x="SeatBottomHingeTopAxle2//Center//${upRight}-${axleRadius}" y="SeatBottomHingeTopAxle2//Center//0" />
-        <point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//-1" />
         <point x="SeatBottomHingeTopAxle2//Center//${upRight}-${axleRadius}" y="SeatBottomHingeTopAxle2//Center//-1" />
+        <point x="SeatBottomHingeRightTeethEndTop//Center//0" y="SeatBottomHingeRightTeethEndTop//Center//-1" />
+        <point x="SeatBottomHingeRightTeethEndTop//Center//0" y="SeatBottomHingeRightTeethEndTop//Center//0" />
 	</path>
   
 	<!-- Sliders and Axles -->
