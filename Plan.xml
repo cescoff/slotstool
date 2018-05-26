@@ -125,7 +125,7 @@
 	<path name="LegFrameSeat2" layer="Main" action="CUT" >
         <point x="SeatTopHingeBottomAxle2//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//1" />
         <point x="SeatTopHingeBottomRight//Center//+${sliderExtraSpan}" y="SeatTopHingeBottomRight//Center//1" />
-        <point x="SeatBottomHingeTopMiddle//Center//${sliderExtraSpan}" y="SeatBottomHingeTopMiddle//Center//-1" />
+        <point x="SeatBottomHingeTopRight//Center//${sliderExtraSpan}" y="SeatBottomHingeTopRight//Center//-1" />
         <point x="SeatBottomHingeTopAxle2//Center//+${sliderEndDistance}" y="SeatBottomHingeTopRight//Center//-1" />
 	</path>
 
@@ -139,7 +139,7 @@
 		<point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//1" />
 	</path>
 
-	<path name="LegFrameLeg3" layer="Main" action="CUT" >
+<!--	<path name="LegFrameLeg3" layer="Main" action="CUT" >
 		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
 		<point x="SeatBottomHingeTopMiddle//Center//+0.6*${upRight}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
@@ -147,7 +147,7 @@
 	<path name="LegFrameLeg4" layer="Main" action="CUT" >
 		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//-1" />
 		<point x="SeatBottomHingeTopMiddle//Center//+0.6*${upRight}" y="SeatBottomHingeTopMiddle//Center//-1" />
-	</path>
+	</path>-->
 
 	<path name="LegTopFrame" layer="Main" action="CUT" >
 		<point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
