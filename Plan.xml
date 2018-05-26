@@ -249,9 +249,16 @@
 	</path>
 
 	<path name="MiddleLegRearAxleTop" layer="MiddleFace" action="CUT" >
-		<point x="SeatTopHingeBottomLeft//Center//${PR}+${upRight}+${axleRadius}+${middleExtraLength}" y="SeatTopHingeBottomLeft//Center//0" />
-		<point x="SeatBottomHingeTopLeft//Center//${PR}+${upRight}+${axleRadius}+${middleExtraLength}" y="SeatBottomHingeTopLeft//Center//0" />
+		<point x="SeatTopHingeBottomLeft//Center//${PR}+${upRight}+1.2*${axleRadius}+${middleExtraLength}" y="SeatTopHingeBottomLeft//Center//0" />
+		<point x="SeatBottomHingeTopLeft//Center//${PR}+${upRight}+1.2*${axleRadius}+${middleExtraLength}" y="SeatBottomHingeTopLeft//Center//0" />
 	</path>
+
+    <circle
+            center-x="SeatTopHingeBottomLeft//Center//${PR}+${upRight}+1.2*${axleRadius}+${middleExtraLength}-${upRight}"
+            center-y="SeatTopHingeBottomLeft//Center//${legHandleWidth}/2"
+            radius="${handleHeight}/2"
+            action="CUT"
+            name="CenterHoleLegTopLeft" layer="Holes" />
 
 	<path name="MiddleLegFootExtrude1" layer="MiddleFace" action="CUT" >
 		<point x="SeatTopHingeBottomLeft//Center//2*${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
