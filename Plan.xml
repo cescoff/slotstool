@@ -465,14 +465,14 @@
     <!-- Seat body handle top -->
     <circle
             center-x="SeatTopHingeTopRight//Center//-${upRight}"
-            center-y="SeatTopHingeTopRight//Center//(${seatMountWidth}-${centralLegWidth})/2-${handleLength}/2+${handleHeight}/2"
+            center-y="SeatTopHingeTopRight//Center//(${seatMountWidth}-${centralLegWidth})/4-${handleLength}/2+${handleHeight}/2"
             radius="${handleHeight}/2"
             action="CUT"
             name="HandCarryTopTopLegTopCircle"
             layer="LegWithoutEnforcement"/>
     <circle
             center-x="SeatTopHingeTopRight//Center//-${upRight}"
-            center-y="SeatTopHingeTopRight//Center//(${seatMountWidth}-${centralLegWidth})/2+${handleLength}/2-${handleHeight}/2"
+            center-y="SeatTopHingeTopRight//Center//(${seatMountWidth}-${centralLegWidth})/4+${handleLength}/2-${handleHeight}/2"
             radius="${handleHeight}/2"
             action="CUT"
             name="HandCarryBottomTopLegBottomCircle"
