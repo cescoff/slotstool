@@ -114,18 +114,19 @@
     </arc>
 
     <!-- Leg -->
+
 	<path name="LegFrameSeat1" layer="Main" action="CUT" hatch-action="MARK" >
-		<point x="SeatTopHingeBottomMiddle//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//0" />
+		<point x="SeatTopHingeBottomAxle2//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//0" />
 		<point x="SeatTopHingeBottomRight//Center//+${sliderExtraSpan}" y="SeatTopHingeBottomRight//Center//0" />
-		<point x="SeatBottomHingeTopRight//Center//+${sliderExtraSpan}" y="SeatBottomHingeTopRight//Center//0" />
+		<point x="SeatBottomHingeTopAxle2//Center//+${sliderExtraSpan}" y="SeatBottomHingeTopRight//Center//0" />
 		<point x="SeatBottomHingeTopMiddle//Center//${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//0" />
 	</path>
 
 	<path name="LegFrameSeat2" layer="Main" action="CUT" >
-		<point x="SeatTopHingeBottomMiddle//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//1" />
-		<point x="SeatTopHingeBottomRight//Center//+${sliderExtraSpan}" y="SeatTopHingeBottomRight//Center//1" />
-		<point x="SeatBottomHingeTopRight//Center//+${sliderExtraSpan}" y="SeatBottomHingeTopRight//Center//-1" />
-		<point x="SeatBottomHingeTopMiddle//Center//${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//-1" />
+        <point x="SeatTopHingeBottomAxle2//Center//${sliderEndDistance}" y="SeatTopHingeBottomMiddle//Center//1" />
+        <point x="SeatTopHingeBottomRight//Center//+${sliderExtraSpan}" y="SeatTopHingeBottomRight//Center//1" />
+        <point x="SeatBottomHingeTopAxle2//Center//+${sliderExtraSpan}" y="SeatBottomHingeTopRight//Center//-1" />
+        <point x="SeatBottomHingeTopMiddle//Center//${sliderEndDistance}" y="SeatBottomHingeTopMiddle//Center//-1" />
 	</path>
 
 	<path name="LegFrameLeg1" layer="Main" action="CUT" >
