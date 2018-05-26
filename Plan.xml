@@ -130,13 +130,17 @@
 	</path>
 
 	<path name="LegFrameLeg1" layer="Main" action="CUT" >
-		<point x="SeatTopHingeBottomAxle2//Center//2*${axleRadius}" y="SeatTopHingeBottomAxle2//Center//0" />
+        <point x="SeatTopHingeBottomAxle2//Center//2*${axleRadius}" y="SeatTopHingeBottomAxle2//Center//0" />
+		<point x="SeatTopHingeBottomAxle2//Center//2*${axleRadius}" y="SeatTopHingeBottomAxle2//Center//1" />
+        <point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//1" />
 		<point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
 	</path>
 
 	<path name="LegFrameLeg2" layer="Main" action="CUT" >
+        <point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//0" />
 		<point x="SeatBottomHingeTopAxle2//Center//2*${axleRadius}" y="SeatBottomHingeTopAxle2//Center//1" />
-		<point x="SeatTopHingeBottomLeft//Center//+${upRight}" y="SeatTopHingeBottomLeft//Center//1" />
+		<point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//1" />
+        <point x="SeatBottomHingeTopLeft//Center//+${upRight}" y="SeatBottomHingeTopLeft//Center//0" />
 	</path>
 
 <!--	<path name="LegFrameLeg3" layer="Main" action="CUT" >
