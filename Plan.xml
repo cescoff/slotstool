@@ -419,22 +419,22 @@
 
     <circle center-x="SeatTopHingeLeftTeethEndTop//Center//-${legHandleDistance}-${handleHeight}/2" center-y="SeatTopHingeLeftTeethEndTop//Center//${upRight}" radius="${handleHeight}/2" action="CUT" name="HandCarryTopLegLeftCircle" layer="LegWithoutEnforcement"/>
     <circle center-x="SeatTopHingeLeftTeethEndTop//Center//-${legHandleDistance}-${legHandleWidth}+${handleHeight}/2" center-y="SeatTopHingeLeftTeethEndTop//Center//${upRight}" radius="${handleHeight}/2" action="CUT" name="HandCarryTopLegRightCircle" layer="LegWithoutEnforcement"/>
-    <path name="HandCarryTopLeft" layer="CoverHandle" action="CUT" >
+    <path name="HandCarryTopLegTop" layer="CoverHandle" action="CUT" >
         <point x="HandCarryTopLegLeftCircle//RadiusTop//0" y="HandCarryTopLegLeftCircle//RadiusTop//0" />
         <point x="HandCarryTopLegRightCircle//RadiusTop//0" y="HandCarryTopLegRightCircle//RadiusTop//0" />
     </path>
-    <path name="HandCarryTopRight" layer="CoverHandle" action="CUT" >
+    <path name="HandCarryTopLegBottom" layer="CoverHandle" action="CUT" >
         <point x="HandCarryTopLegLeftCircle//RadiusBottom//0" y="HandCarryTopLegLeftCircle//RadiusBottom//0" />
         <point x="HandCarryTopLegRightCircle//RadiusBottom//0" y="HandCarryTopLegRightCircle//RadiusBottom//0" />
     </path>
 
     <circle center-x="SeatBottomHingeLeftTeethEndTop//Center//-${legHandleDistance}-${handleHeight}/2" center-y="SeatBottomHingeLeftTeethEndTop//Center//-${upRight}" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomLegLeftCircle" layer="LegWithoutEnforcement"/>
     <circle center-x="SeatBottomHingeLeftTeethEndTop//Center//-${legHandleDistance}-${legHandleWidth}+${handleHeight}/2" center-y="SeatBottomHingeLeftTeethEndTop//Center//-${upRight}" radius="${handleHeight}/2" action="CUT" name="HandCarryBottomLegRightCircle" layer="LegWithoutEnforcement"/>
-    <path name="HandCarryBottomLeft" layer="CoverHandle" action="CUT" >
+    <path name="HandCarryBottomLegTop" layer="CoverHandle" action="CUT" >
         <point x="HandCarryBottomLegLeftCircle//RadiusTop//0" y="HandCarryBottomLegLeftCircle//RadiusTop//0" />
         <point x="HandCarryBottomLegRightCircle//RadiusTop//0" y="HandCarryBottomLegRightCircle//RadiusTop//0" />
     </path>
-    <path name="HandCarryBottomRight" layer="CoverHandle" action="CUT" >
+    <path name="HandCarryBottomLegBottom" layer="CoverHandle" action="CUT" >
         <point x="HandCarryBottomLegLeftCircle//RadiusBottom//0" y="HandCarryBottomLegLeftCircle//RadiusBottom//0" />
         <point x="HandCarryBottomLegRightCircle//RadiusBottom//0" y="HandCarryBottomLegRightCircle//RadiusBottom//0" />
     </path>
