@@ -486,5 +486,29 @@
         <point x="HandCarryBottomTopLegBottomCircle//RadiusLeft//0" y="HandCarryBottomTopLegBottomCircle//RadiusLeft//0" />
     </path>
 
+    <!-- Seat body handle bottom -->
+    <circle
+            center-x="SeatBottomHingeTopRight//Center//-${upRight}"
+            center-y="SeatBottomHingeTopRight//Center//(${seatMountWidth}-${centralLegWidth})/4-${handleLength}/2+${handleHeight}/2"
+            radius="${handleHeight}/2"
+            action="CUT"
+            name="HandCarryBottomTopLegTopCircle"
+            layer="LegWithoutEnforcement"/>
+    <circle
+            center-x="SeatBottomHingeTopRight//Center//-${upRight}"
+            center-y="SeatBottomHingeTopRight//Center//(${seatMountWidth}-${centralLegWidth})/4+${handleLength}/2-${handleHeight}/2"
+            radius="${handleHeight}/2"
+            action="CUT"
+            name="HandCarryBottomBottomLegBottomCircle"
+            layer="LegWithoutEnforcement"/>
+    <path name="HandCarryBottomTopLegTopCirclePath" layer="LegWithoutEnforcement" action="CUT" >
+        <point x="HandCarryBottomTopLegTopCircle//RadiusRight//0" y="HandCarryBottomTopLegTopCircle//RadiusRight//0" />
+        <point x="HandCarryBottomBottomLegBottomCircle//RadiusRight//0" y="HandCarryBottomBottomLegBottomCircle//RadiusRight//0" />
+    </path>
+    <path name="HandCarryBottomBottomLegBottomCirclePath" layer="LegWithoutEnforcement" action="CUT" >
+        <point x="HandCarryBottomTopLegTopCircle//RadiusLeft//0" y="HandCarryBottomTopLegTopCircle//RadiusLeft//0" />
+        <point x="HandCarryBottomBottomLegBottomCircle//RadiusLeft//0" y="HandCarryBottomBottomLegBottomCircle//RadiusLeft//0" />
+    </path>
+
 
 </blue-print>
