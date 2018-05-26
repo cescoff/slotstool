@@ -97,6 +97,6 @@
     
     <validation name="Aspect ratio value must be 1 or 2" expression="(${aspectRatio} - 1)*(${aspectRatio} - 1.6)*(${aspectRatio} - 2)" validation="==0" />
     <validation name="Wood span must be 5 or 8 mm" expression="(${fullWoodSpan} - 5)*(${fullWoodSpan} - 8)" validation="==0" />
-    <validation name="Central leg is too large" expression="${handleLength}-1.1*(${seatWidth}/3)" validation="<=0" />
+    <validation name="Central leg is too large" expression="${handleLength}-1.1*(${seatWidth}/3)" validation="&lt;=0" />
 
 </variables>
