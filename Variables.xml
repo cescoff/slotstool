@@ -3,7 +3,7 @@
     <variable name="borderdistance" value="10.0"/>
 
     <!-- User defined vars -->
-    <variable name="fullSeatHeight" value="410" print="true"/>
+    <variable name="fullSeatHeight" value="400" print="true"/>
     <variable name="fullSeatLength" value="340" print="true"/>
     <variable name="fullSeatWidth" value="370" print="true"/>
     <variable name="fullUpRight" value="50" print="true"/>

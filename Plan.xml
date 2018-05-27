@@ -260,7 +260,6 @@
             action="CUT"
             name="CentralLegHandleHole" layer="LegWithoutEnforcement" />
 
-    <!-- TODO CHECK THAT -->
 <!--	<path name="MiddleLegFootExtrude1" layer="MiddleFace" action="CUT" >
 		<point x="SeatTopHingeBottomLeft//Center//2*${upRight}" y="SeatTopHingeBottomLeft//Center//0" />
 		<point x="SeatBottomHingeTopLeft//Center//2*${upRight}" y="SeatBottomHingeTopLeft//Center//0" />

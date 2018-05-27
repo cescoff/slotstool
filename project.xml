@@ -14,7 +14,7 @@
     <dynamic-preview-output-url>https://raw.githubusercontent.com/cescoff/slotstool/master/ThumbnailOutputConfig.xml</dynamic-preview-output-url>
     <documentation-url>https://raw.githubusercontent.com/cescoff/slotstool/master/Documentation.html</documentation-url>
     <default>
-        <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">410</variable>
+        <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">400</variable>
         <variable name="fullSeatLength" display-name="Seat Length" unit="mm" description="In millimeters">340</variable>
         <variable name="fullSeatWidth" display-name="Seat Width" unit="mm" description="In millimeters">370</variable>
         <variable name="fullUpRight" display-name="Upright" unit="mm" description="In millimeters">50</variable>
@@ -26,7 +26,7 @@
 <!--        <variable name="enlightAllLayers" type="boolean" display-name="Enlight legs" unit="" description="Check to have none full legs">false</variable>-->
     </default>
     <printable>
-        <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">410</variable>
+        <variable name="fullSeatHeight" display-name="Seat Height" unit="mm" description="In millimeters">400</variable>
         <variable name="fullSeatLength" display-name="Seat Length" unit="mm" description="In millimeters">330</variable>
         <variable name="fullSeatWidth" display-name="Seat Width" unit="mm" description="In millimeters">330</variable>
         <variable name="fullUpRight" display-name="Upright" unit="mm" description="In millimeters">50</variable>
